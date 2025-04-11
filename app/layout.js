@@ -9,7 +9,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <body className={`${oratorStd.variable} ${graphik.variable} antialiased`}>
+      <body
+        className={`${oratorStd.variable} ${graphik.variable} antialiased bg-primary text-black`}
+      >
         {children}
       </body>
     </html>
