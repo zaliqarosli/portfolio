@@ -37,7 +37,9 @@ export default function Home() {
           <h5 className='self-stretch text-right'>Designer x Developer</h5>
           <div className='flex min-h-[9.375rem] flex-col justify-between items-end flex-[1_0_0]'>
             <h4 className='text-right'>montreal, qc</h4>
-            <CTA>see my work</CTA>
+            <CTA name='work-cta' href='/work'>
+              see my work
+            </CTA>
           </div>
         </div>
       </div>

@@ -53,8 +53,8 @@ html {
     text-box-edge: cap alphabetic;
   }
   h4,
-  button,
-  button * {
+  a.cta-button,
+  a.cta-button * {
     font-family: var(--font-orator-std);
     font-size: var(--text-xl);
     line-height: 1.5;
