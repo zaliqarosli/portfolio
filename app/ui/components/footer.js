@@ -1,6 +1,10 @@
+'use client';
+
 import Icon from './icon';
 
 export default function Footer() {
+  const email = 'zaliqarosli@gmail.com';
+
   return (
     <footer className='flex pt-[3.75rem] px-[2.5rem] pb-[2.5rem] flex-col justify-center items-end self-stretch w-full'>
       <div className='flex flex-col items-end'>
@@ -9,8 +13,14 @@ export default function Footer() {
             <h4 className='flex pl-[0.3125rem] content-center items-center'>
               get in touch
             </h4>
-            <strong className='flex text-right pl-[0.4375rem] content-center items-center '>
-              zaliqarosli@gmail.com
+            {/* TO-DO: Add tooltip alerting 'copied!' */}
+            <strong
+              className='flex text-right pl-[0.4375rem] content-center items-center cursor-pointer'
+              onClick={() => {
+                navigator.clipboard.writeText(email);
+              }}
+            >
+              {email}
             </strong>
           </div>
           {/* Social Media Icons */}
