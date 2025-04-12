@@ -15,7 +15,7 @@ export default function NavLink({ name, href }) {
         'border-b border-inherit border-solid': pathname === href,
       })}
     >
-      <h3 className='text-center'>{name}</h3>
+      <h4 className='text-center'>{name}</h4>
     </Link>
   );
 }
