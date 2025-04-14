@@ -6,22 +6,24 @@ export default function Footer() {
   const email = 'zaliqarosli@gmail.com';
 
   return (
-    <footer className='flex pt-[3.75rem] px-[2.5rem] pb-[2.5rem] flex-col justify-center items-end self-stretch w-full'>
+    <footer className='flex pt-[3.75rem] px-[2.5rem] pb-[2.5rem] flex-col justify-center items-end self-stretch'>
       <div className='flex flex-col items-end'>
         <div className='flex flex-col items-start gap-[2.75rem] self-stretch'>
           <div className='flex flex-col items-end gap-[1rem]'>
-            <h4 className='flex pl-[0.3125rem] content-center items-center'>
-              get in touch
-            </h4>
-            {/* TO-DO: Add tooltip alerting 'copied!' */}
-            <strong
-              className='flex text-right pl-[0.4375rem] content-center items-center cursor-pointer'
-              onClick={() => {
-                navigator.clipboard.writeText(email);
-              }}
-            >
-              {email}
-            </strong>
+            <div className='flex pl-[0.3125rem] justify-center items-center'>
+              <h4>get in touch</h4>
+            </div>
+            <div className='flex pl-[0.4375rem] justify-center items-center'>
+              {/* TO-DO: Add tooltip alerting 'copied!' */}
+              <strong
+                className='text-right cursor-pointer'
+                onClick={() => {
+                  navigator.clipboard.writeText(email);
+                }}
+              >
+                {email}
+              </strong>
+            </div>
           </div>
           {/* Social Media Icons */}
           <div className='flex pl-[3rem] justify-between items-center self-stretch'>
