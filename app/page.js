@@ -2,7 +2,7 @@ import CTA from './ui/components/cta';
 
 export default function Home() {
   return (
-    <main className='flex max-w-[47.0625rem] min-h-[48.9375rem] pt-[6.4rem]  px-[1.875rem] mb-[3.25rem] justify-end items-center self-stretch flex-wrap xs:flex-nowrap mx-auto w-full'>
+    <main className='flex max-w-[47.0625rem] min-h-[45.1rem] xs:min-h-[40.1rem] pt-[2.5rem] px-[1.875rem] sm:pt-[5rem] sm:pb-[2.5rem] sm:mb-[2.5rem] justify-end items-center self-stretch flex-wrap xxs:flex-nowrap mx-auto w-full'>
       <div
         id='logo'
         className='flex min-w-[8.6875rem] items-start gap-[0.9375rem] flex-[1_0_0] self-stretch mr-[-2.375rem]'
@@ -20,14 +20,14 @@ export default function Home() {
           className='flex max-w-[9.5rem] flex-col justify-end items-center flex-[1_0_0] self-stretch'
         >
           {/* <h1 className='self-stretch text-right break-all mb-[-4.3rem] xs:mb-[-1.9rem] xs:mt-[20rem]'> */}
-          <h1 className='self-stretch text-right break-all mb-[-3rem] xs:mb-[0rem]'>
+          <h1 className='self-stretch text-right break-all mb-[-3rem] xxs:mb-[0rem]'>
             rosli
           </h1>
         </div>
       </div>
       <div
         id='content-container'
-        className='flex pt-[11.3125rem] pr-[0.625rem] pb-0 pl-0 flex-col justify-end items-end gap-[19.6875rem] self-stretch'
+        className='flex pt-[11.45rem] pr-[0.625rem] pb-0 pl-0 flex-col justify-end items-end gap-[19.6875rem] self-stretch'
       >
         <div
           id='content'

@@ -9,7 +9,9 @@
   --color-midgray: #2f3336;
   --color-lightgray: #9f9eb1;
   --color-offwhite: #f9f6f5;
-  --breakpoint-xs: 419px;
+  --breakpoint-xxs: 419px;
+  --breakpoint-xs: 454px;
+  --breakpoint-sm: 527px;
 }
 
 /* Set base root font-size based on breakpoint */

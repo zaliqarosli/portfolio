@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${oratorStd.variable} ${graphik.variable} antialiased bg-primary text-black flex flex-col items-center gap-[0.625rem]`}
+        className={`${oratorStd.variable} ${graphik.variable} antialiased bg-primary text-black flex flex-col items-center gap-[2.5rem]`}
       >
         <NavBar />
         {children}
