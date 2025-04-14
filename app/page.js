@@ -2,7 +2,7 @@ import CTA from './ui/components/cta';
 
 export default function Home() {
   return (
-    <main className='flex max-w-[47.0625rem] min-h-[48.9375rem] pt-[6.5rem] pb-[3.25rem] px-[1.875rem] justify-end items-center self-stretch flex-wrap xs:flex-nowrap mx-auto w-full'>
+    <main className='flex max-w-[47.0625rem] min-h-[48.9375rem] pt-[6.4rem]  px-[1.875rem] mb-[3.25rem] justify-end items-center self-stretch flex-wrap xs:flex-nowrap mx-auto w-full'>
       <div
         id='logo'
         className='flex min-w-[8.6875rem] items-start gap-[0.9375rem] flex-[1_0_0] self-stretch mr-[-2.375rem]'
