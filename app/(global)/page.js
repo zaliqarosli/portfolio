@@ -1,4 +1,4 @@
-import CTA from './ui/components/cta';
+import CTA from '../ui/components/cta';
 
 export default function Home() {
   return (

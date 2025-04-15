@@ -1,3 +1,3 @@
 export default function Page() {
-  return <p>Case Study Page</p>;
+  return <h1>MTL BLOC LIST</h1>;
 }

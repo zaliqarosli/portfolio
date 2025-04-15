@@ -2,7 +2,7 @@
 
 import Icon from './icon';
 
-export default function Footer() {
+export default function GlobalFooter() {
   const email = 'zaliqarosli@gmail.com';
 
   return (

@@ -1,7 +1,6 @@
 import { oratorStd, graphik } from './ui/fonts';
 import './globals.css';
 import NavBar from './ui/components/navbar';
-import Footer from './ui/components/footer';
 
 export const metadata = {
   title: 'Zaliqa Rosli',
@@ -16,7 +15,6 @@ export default function RootLayout({ children }) {
       >
         <NavBar />
         {children}
-        <Footer />
       </body>
     </html>
   );
