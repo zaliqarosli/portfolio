@@ -12,7 +12,7 @@ export default function CaseStudyFooter({ nextPageTitle, nextPagePath }) {
   };
 
   return (
-    <footer className='flex pt-[5rem] pr-[4rem] pb-[2.5rem] pl-[5.25rem] flex-col items-start self-stretch'>
+    <footer className='bg-primary flex pt-[5rem] pr-[4rem] pb-[2.5rem] pl-[5.25rem] flex-col items-start self-stretch'>
       <div className='flex max-w-[51.875rem] flex-col items-start gap-[5rem]'>
         <Link
           key='nextPagePath'

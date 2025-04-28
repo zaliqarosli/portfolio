@@ -12,7 +12,7 @@ export default function GlobalFooter() {
   };
 
   return (
-    <footer className='flex pt-[3.75rem] px-[2.5rem] pb-[2.5rem] flex-col justify-center items-end self-stretch'>
+    <footer className='bg-primary flex pt-[3.75rem] px-[2.5rem] pb-[2.5rem] flex-col justify-center items-end self-stretch'>
       <div className='flex flex-col items-end'>
         <div className='flex flex-col items-start gap-[2.75rem] self-stretch'>
           <div className='flex flex-col items-end gap-[1rem]'>

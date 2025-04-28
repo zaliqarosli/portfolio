@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang='en'>
       <body
-        className={`${oratorStd.variable} ${graphik.variable} antialiased bg-primary text-black flex flex-col items-center gap-[2.5rem]`}
+        className={`${oratorStd.variable} ${graphik.variable} antialiased bg-[url(/background-gradient.jpg)] bg-cover text-black flex flex-col items-center gap-[2.5rem]`}
       >
         <NavBar />
         {children}
