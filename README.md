@@ -1,7 +1,8 @@
 # About
 
 This is the personal design portfolio of Zaliqa Rosli. This is a work in progress.
-It can be viewed deloyed live on Vercel at https://portfolio-zaliqa-roslis-projects.vercel.app/
+
+#### It can be viewed deloyed live on Vercel \(click [here](https://portfolio-zaliqa-roslis-projects.vercel.app/)\)
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
