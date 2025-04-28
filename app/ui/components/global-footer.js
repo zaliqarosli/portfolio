@@ -1,9 +1,15 @@
 'use client';
 
-import Icon from './icon';
+import { useEffect } from 'react';
+import Icon from './icon-component';
 
 export default function GlobalFooter() {
   const email = 'zaliqarosli@gmail.com';
+  const useNavigator = () => {
+    useEffect(() => {
+      navigator.clipboard.writeText(email);
+    }, []);
+  };
 
   return (
     <footer className='flex pt-[3.75rem] px-[2.5rem] pb-[2.5rem] flex-col justify-center items-end self-stretch'>
@@ -17,9 +23,7 @@ export default function GlobalFooter() {
               {/* TO-DO: Add tooltip alerting 'copied!' */}
               <strong
                 className='text-right cursor-pointer'
-                onClick={() => {
-                  navigator.clipboard.writeText(email);
-                }}
+                onClick={useNavigator}
               >
                 {email}
               </strong>

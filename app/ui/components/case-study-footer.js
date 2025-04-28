@@ -1,10 +1,15 @@
 'use client';
 
-import Icon from './icon';
+import Icon from './icon-component';
 import Link from 'next/link';
 
 export default function CaseStudyFooter({ nextPageTitle, nextPagePath }) {
   const email = 'zaliqarosli@gmail.com';
+  const useNavigator = () => {
+    useEffect(() => {
+      navigator.clipboard.writeText(email);
+    }, []);
+  };
 
   return (
     <footer className='flex pt-[5rem] pr-[4rem] pb-[2.5rem] pl-[5.25rem] flex-col items-start self-stretch'>
@@ -38,7 +43,7 @@ export default function CaseStudyFooter({ nextPageTitle, nextPagePath }) {
               <strong
                 className='text-right cursor-pointer'
                 onClick={() => {
-                  navigator.clipboard.writeText(email);
+                  useNavigator;
                 }}
               >
                 {email}
