@@ -8,7 +8,7 @@ export default function IconComponent({
   alt,
 }) {
   return (
-    <div className={`flex content-center items-center ${className}`}>
+    <div className={`flex justify-center items-center ${className}`}>
       <Image src={href} width={width} height={height} alt={alt} />
     </div>
   );
