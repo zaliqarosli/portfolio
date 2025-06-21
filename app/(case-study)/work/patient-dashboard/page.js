@@ -3,6 +3,8 @@ import Image from 'next/image';
 export default function Page() {
   const title = 'patient dashboard';
   const name = 'patient-dashboard';
+  const description =
+    "Redesigning a study participant's profile page as a hub of tagged data";
   return (
     <>
       <header className='flex flex-col items-center self-stretch relative'>
@@ -20,13 +22,12 @@ export default function Page() {
           </div>
         </div>
         <div className='flex py-[0rem] px-[4.125rem] justify-between items-center absolute bottom-[1.875rem]'>
-          <figure className='flex max-w-[37.5rem] py-[3.125rem] px-[2.25rem] flex-col justify-center items-center gap-[3.125rem] flex-[1_0_0] bg-offwhite shadow-md shadow-brown-shadow text-midgray'>
+          <figure className='flex max-w-[37.5rem] py-[3.125rem] px-[2.25rem] flex-col justify-center items-center gap-[3.125rem] flex-[1_0_0] bg-offwhite shadow-md shadow-brown-shadow text-darkgray'>
             <h2 className='text-center max-w-[25.5rem] self-stretch'>
               {title}
             </h2>
             <figcaption className='max-w-[25.5rem] self-stretch text-center'>
-              Redesigning a study participant’s profile page as a hub of tagged
-              data
+              {description}
             </figcaption>
           </figure>
         </div>
