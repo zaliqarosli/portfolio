@@ -83,14 +83,14 @@ export default function Page() {
         </section>
         <section
           id={`${name}-solution`}
-          className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem self-stretch]'
+          className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch'
         >
-          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] justify-center items-center self-stretch'>
-            <h2 className='max-w-[54rem] flex=[1_0_0]'>THE SOLUTION</h2>
+          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] justify-start items-center w-full'>
+            <h2 className=''>THE SOLUTION</h2>
           </header>
           <div
             id='role-section-container'
-            className='flex px-[1.875rem] py-[0rem] flex-col items-center self-stretch'
+            className='flex px-[1.875rem] py-[0rem] flex-col items-center'
           >
             <div className='flex max-w-[50.25rem] px-[3.75rem] py-[6.25rem] justify-center items-end self-stretch bg-white text-center'>
               {/* text container */}
@@ -122,16 +122,16 @@ export default function Page() {
           </div>
           <div
             id='par-1'
-            className='flex max-w-[54rem] py-[0rem] px-[1.875rem] flex-col justify-center items-center self-stretch'
+            className='flex max-w-[54rem] py-[0rem] px-[1.875rem] flex-col justify-center items-center'
           >
             <p className='self-stretch'>
               To solve these problems, we focused on 3 areas: colour system,
               alignment, and iconography.
             </p>
           </div>
-          <div
+          <section
             id='colour-system'
-            className='flex max-w-[54rem] flex-col items-center gap-[1.875rem] self-stretch'
+            className='flex max-w-[54rem] flex-col items-center gap-[1.875rem]'
           >
             <section
               id='section-1'
@@ -218,9 +218,197 @@ export default function Page() {
                 before it was merged into the codebase.
               </p>
             </section>
-          </div>
-          <div id='alignment'> </div>
-          <div id='iconography'></div>
+          </section>
+          <section
+            id='alignment'
+            className='flex max-w-[54rem] flex-col items-center gap-[1.875rem]'
+          >
+            <header
+              id='div-1'
+              className='flex pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-center gap-[1.875rem] self-stretch'
+            >
+              <h3 className='w-full'>Alignment</h3>
+              <p>
+                Before our cleanup, the digital forms that were rendered by
+                templates had varied indentation which made it hard to read.
+                Users reported that it was frustrating to constantly realign
+                their eyes while completing the questionnaires.
+              </p>
+            </header>
+            <div
+              id='div-2'
+              className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center'
+            >
+              <div
+                id='midgray-container-1'
+                className='flex p-[2.5rem] flex-col items-start self-stretch bg-midgray'
+              >
+                <div
+                  id='img-container-1'
+                  className='flex pt-[1.25rem] px-[0.625rem] pb=[0.625rem] flex-col items-start self-stretch bg-white'
+                >
+                  <Image
+                    src='/rrf_before@4x.jpg'
+                    width={1318}
+                    height={892}
+                    alt={`radiology review form showing misalignment on input labels`}
+                    className='self-stretch aspect-[330.00/223.40]'
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              id='div-3'
+              className='flex py-[0rem] px-[1.875rem] justify-center items-center self-stretch'
+            >
+              <p>
+                We correctly aligned the forms and rendered them as their paper
+                version to help decrease cognitive load when completing the
+                task.
+              </p>
+            </div>
+            <div
+              id='div-4'
+              className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center'
+            >
+              {' '}
+              <div
+                id='midgray-container-2'
+                className='flex p-[2.5rem] flex-col items-start self-stretch bg-midgray'
+              >
+                <div
+                  id='img-container-2'
+                  className='flex pt-[1.25rem] pr-[0rem] pb-[0.625rem] pl=[0.75rem] flex-col items-start self-stretch bg-white'
+                >
+                  <Image
+                    src='/rrf_after@4x.jpg'
+                    width={1396}
+                    height={992}
+                    alt={`radiology review form with input labels aligned`}
+                    className='self-stretch aspect-[338.00/240.18]'
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section
+            id='iconography'
+            className='flex flex-col items-center gap-[1.875rem] self-stretch'
+          >
+            <header
+              id='icon-div-1'
+              className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-start gap-[1.875rem]'
+            >
+              <h3>Iconography</h3>
+              <p>
+                Because LORIS had been first developed in the 90s, a lot of the
+                graphics used were from that time and had not yet been updated.
+                While the icons had not produced pain points for users at the
+                time, as soon as we applied the new colour style, it was clear
+                that they needed to be replaced.
+              </p>
+            </header>
+            <figure
+              id='icon-div-2'
+              className='flex max-w-[50.25rem] py-[0.675rem] px-[0rem] flex-col items-center'
+            >
+              <div
+                id='imgs-cont'
+                className='flex max-w-[44rem] py-[2.5rem] px-[3.125rem] justify-center items-start gap-[2.875rem] bg-white'
+              >
+                <div
+                  id='img-cont-1'
+                  className='flex pt-[0.75rem] pr-[0rem] pb-[0.9375rem] pl-[0.625rem] items-center flex-[1_0_0] aspect-[30/53] bg-[#0D4983]'
+                >
+                  <Image
+                    src='/panel-icon-before-1@4x.jpg'
+                    width={498}
+                    height={774}
+                    alt={`panel UI with outdated, pixelated icons`}
+                    className='flex-[1_0_0] aspect-[140.00/227.50]'
+                  />
+                </div>
+                <div
+                  id='img-cont-2'
+                  className='flex pt-[1.25rem] pr-[0rem] pb-[0.3125rem] pl-[0.625rem] items-center flex-[1_0_0] aspect-[30/53] bg-[#E3EAF1]'
+                >
+                  <Image
+                    src='/panel-icon-before-2@4x.jpg'
+                    width={230}
+                    height={452}
+                    alt={`panel UI with outdated, pixelated icons`}
+                    className='shrink-0 aspect-[129/239]'
+                  />
+                </div>
+              </div>
+              <div
+                id='caption-cont'
+                className='flex max-w-[50.25rem] pt-[1.875rem] px-[3.125rem] pb-[0rem] items-center'
+              >
+                <figcaption className='flex-[1_0_0]'>
+                  Before (left) and after (right) applying new colour style
+                </figcaption>
+              </div>
+            </figure>
+            <div
+              id='icon-div-3'
+              className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center'
+            >
+              <p className='flex-[1_0_0]'>
+                We updated the iconography for a cleaner, and more modern and
+                consistent look. We replaced the outdated icons with
+                FontAwesome’s library, which was easy to manage and also
+                improved performance by allowing us to remove all individual
+                icons from the application’s assets. While merely updating the
+                icons improved the look of the panel by improving clarity, doing
+                so in tandem with the new colour style greatly increased
+                contrast and readability.
+              </p>
+            </div>
+            <figure
+              id='icon-div-4'
+              className='flex max-width-[50.25rem] py-[0rem] px-[1.875rem] flex-col items-center gap-[1.875rem]'
+            >
+              <div
+                id='imgs-cont-2'
+                className='flex py-[0.625rem] px-[1.875rem] justify-center min-[804px]:justify-between content-center gap-[1.25rem] flex-wrap w-full'
+              >
+                <div
+                  id='img-cont-2-1'
+                  className='flex h-[30rem] w-[20.75rem] py-[1.25rem] pr-[0.9375rem] pl-[1.875rem] justify-center items-center aspect-[83/120] bg-[#0D4983]'
+                >
+                  <Image
+                    src='/panel-icon-after-1@4x.jpg'
+                    width={470}
+                    height={800}
+                    alt={`panel UI with fontawesome icons`}
+                    className='shrink-0 aspect-[267.00/432.69]'
+                  />
+                </div>
+                <div
+                  id='img-cont-2-2'
+                  className='flex h-[30rem] w-[20.75rem] p-[1.25rem] justify-center items-center aspect-[83/120] bg-[#E4EBF2]'
+                >
+                  <Image
+                    src='/panel-icon-after-2@4x.jpg'
+                    width={492}
+                    height={958}
+                    alt={`panel UI with fontawesome icons`}
+                    className='shrink-0 aspect-[272.00/444.06]'
+                  />
+                </div>
+              </div>
+              <div
+                id='caption-cont-2'
+                className='flex max-w-[50.25rem] py-[0rem] px-[1.875rem] 2xl:px-[1.75rem] justify-center items-center'
+              >
+                <figcaption className='flex-[1_0_0]'>
+                  Implementing FontAwesome icons, followed by the new colour
+                  style, in the QC panel
+                </figcaption>
+              </div>
+            </figure>
+          </section>
         </section>
         <section
           id={`${name}-results`}
