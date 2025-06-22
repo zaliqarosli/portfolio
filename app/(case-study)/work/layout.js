@@ -17,7 +17,6 @@ export default function Layout({ children }) {
   const nextIndex =
     (caseStudies.findIndex((e) => e.path === path) + 1) % caseStudies.length;
   const nextPage = caseStudies[nextIndex];
-  const currentPage = usePathname();
 
   useEffect(
     () =>
@@ -35,7 +34,7 @@ export default function Layout({ children }) {
       {/* scroll up arrow */}
       <Link
         className={`hidden ${displayScrollArrow} p-[5rem] justify-center items-center fixed bottom-0 right-0 transition-[display] duration-1000 ease-out`}
-        href={currentPage}
+        href='#top'
       >
         <IconComponent
           href='/arrow-up-icon.svg'

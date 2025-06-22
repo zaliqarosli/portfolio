@@ -60,26 +60,33 @@ export default function Page() {
         </section>
         <section
           id={`${name}-problem`}
-          className='flex max-w-[54rem] pt-[1.875rem] pb-[0rem] px-[1.875rem] flex-col items-start gap-[1.875rem] 2xl:gap-[3.75rem self-stretch]'
+          className='flex max-w-[54rem] pt-[1.875rem] pb-[0rem] px-[1.875rem] flex-col items-start gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
           <h2 className='self-stretch'>THE PROBLEM</h2>
-          <p className='self-stretch'>
-            One of our focuses was to optimize the data entry user’s journey. A
-            data entry personnel’s problem is that she needs to easily and
-            quickly complete her data entry task so that she can attend to other
-            tasks in her busy schedule. How can we ensure that she can easily
-            find and complete the forms accurately so that she can be productive
-            with her time? Our main desire was to lessen the user’s cognitive
-            load. From user feedback, we learned that LORIS’ primary colour,
-            LORIS blue, was applied too heavily across the interface, making it
-            overwhelming. It was also noted that whitespace and contrast were
-            underused, particularly in the navigation bar. The lack of colour
-            variation and text hierarchy made navigating less intuitive. 
-            Furthermore, we heard from users that their workflow of directly
-            entering data from paper to screen was made more difficult by the
-            misalignment of the digital forms and its mismatch with its paper
-            version.
-          </p>
+          <div className='flex flex-col gap-[1.875rem] self-stretch'>
+            <p>
+              One of our focuses was to optimize the data entry user’s journey.
+              A data entry personnel’s problem is that she needs to easily and
+              quickly complete her data entry task so that she can attend to
+              other tasks in her busy schedule. How can we ensure that she can
+              easily find and complete the forms accurately so that she can be
+              productive with her time?
+            </p>
+            <p>
+              Our main desire was to lessen the user’s cognitive load. From user
+              feedback, we learned that LORIS’ primary colour, LORIS blue, was
+              applied too heavily across the interface, making it overwhelming.
+              It was also noted that whitespace and contrast were underused,
+              particularly in the navigation bar. The lack of colour variation
+              and text hierarchy made navigating less intuitive.
+            </p>
+            <p>
+              Furthermore, we heard from users that their workflow of directly
+              entering data from paper to screen was made more difficult by the
+              misalignment of the digital forms and its mismatch with its paper
+              version.
+            </p>
+          </div>
         </section>
         <section
           id={`${name}-solution`}
@@ -138,27 +145,40 @@ export default function Page() {
               className='flex pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col justify-center items-start gap-[1.875rem] self-stretch'
             >
               <h3 className='self-stretch'>Colour system</h3>
-              <p className='self-stretch'>
-                We created a text hierarchy by defining a colour system and
-                applied it to the navigation bar to make navigational elements
-                and their states easier to identify. Basing our decisions on the
-                user feedback, we wanted to implement colours that would lighten
-                the user’s cognitive load and take advantage of the
-                Aesthetic-Usability Effect. We created a colour system in order
-                to maintain a consistent and clear visual hierarchy and style. 
-                We decided to preserve the LORIS blue as it effectively
-                represents and serves the field of the product. However, we knew
-                that we could only sparingly use it due to how dark it was.
-                Therefore, we defined a system that would include variants for
-                the primary colour and a secondary colour that would be
-                complementary to the first.  We came up with various colour
-                styles that were created with the software’s use case in mind.
-                We pulled out palettes from contextual imagery such as brain
-                scans, and considered colour psychology in our choices. To
-                select our final colour style, we conducted testing on users and
-                chose the style that received the most positive reviews.  The
-                final selected style ended up being the one that I had created.
-              </p>
+              <div className='flex flex-col gap-[1.875rem] self-stretch'>
+                <p>
+                  We created a text hierarchy by defining a colour system and
+                  applied it to the navigation bar to make navigational elements
+                  and their states easier to identify.
+                </p>
+                <p>
+                  Basing our decisions on the user feedback, we wanted to
+                  implement colours that would lighten the user’s cognitive load
+                  and take advantage of the Aesthetic-Usability Effect. We
+                  created a colour system in order to maintain a consistent and
+                  clear visual hierarchy and style.
+                </p>
+                <p>
+                  We decided to preserve the LORIS blue as it effectively
+                  represents and serves the field of the product. However, we
+                  knew that we could only sparingly use it due to how dark it
+                  was. Therefore, we defined a system that would include
+                  variants for the primary colour and a secondary colour that
+                  would be complementary to the first.
+                </p>
+                <p>
+                  We came up with various colour styles that were created with
+                  the software’s use case in mind. We pulled out palettes from
+                  contextual imagery such as brain scans, and considered colour
+                  psychology in our choices. To select our final colour style,
+                  we conducted testing on users and chose the style that
+                  received the most positive reviews.
+                </p>
+                <p>
+                  The final selected style ended up being the one that I had
+                  created.
+                </p>
+              </div>
             </section>
             <section
               id='section-2'
@@ -227,7 +247,7 @@ export default function Page() {
               id='div-1'
               className='flex pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-center gap-[1.875rem] self-stretch'
             >
-              <h3 className='w-full'>Alignment</h3>
+              <h3 className='self-stretch'>Alignment</h3>
               <p>
                 Before our cleanup, the digital forms that were rendered by
                 templates had varied indentation which made it hard to read.
@@ -354,16 +374,20 @@ export default function Page() {
               id='icon-div-3'
               className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center'
             >
-              <p className='flex-[1_0_0]'>
-                We updated the iconography for a cleaner, and more modern and
-                consistent look. We replaced the outdated icons with
-                FontAwesome’s library, which was easy to manage and also
-                improved performance by allowing us to remove all individual
-                icons from the application’s assets. While merely updating the
-                icons improved the look of the panel by improving clarity, doing
-                so in tandem with the new colour style greatly increased
-                contrast and readability.
-              </p>
+              <div className='flex flex-col gap-[1.875rem]'>
+                <p className='flex-[1_0_0]'>
+                  We updated the iconography for a cleaner, and more modern and
+                  consistent look. We replaced the outdated icons with
+                  FontAwesome’s library, which was easy to manage and also
+                  improved performance by allowing us to remove all individual
+                  icons from the application’s assets.
+                </p>
+                <p>
+                  While merely updating the icons improved the look of the panel
+                  by improving clarity, doing so in tandem with the new colour
+                  style greatly increased contrast and readability.
+                </p>
+              </div>
             </div>
             <figure
               id='icon-div-4'
@@ -412,12 +436,134 @@ export default function Page() {
         </section>
         <section
           id={`${name}-results`}
-          className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem self-stretch]'
-        ></section>
+          className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
+        >
+          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-start gap-[1.875rem]'>
+            <h2 className='self-stretch'>The results</h2>
+            <p className='self-stretch'>
+              Applying the colour system greatly improved the interface, the
+              results of which were apparent right away in the user’s journey:
+              on the login and dashboard pages.
+            </p>
+          </header>
+          <figure
+            id='results-fig-1'
+            className='flex max-w-[67.5rem] py-[0.625rem] px-[0rem] flex-col items-center gap-[1.875rem]'
+          >
+            <div
+              id='results-imgs-cont'
+              className='flex p-[2.5rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray'
+            >
+              <Image
+                src='/login_old@4x.jpg'
+                width={2048}
+                height={1159}
+                alt={`previous design of loris login page`}
+                className='self-stretch aspect-[350.00/221.42]'
+              />
+              <Image
+                src='/login_new_hover@4x.jpg'
+                width={2880}
+                height={1800}
+                alt={`improved design of loris login page`}
+                className='self-stretch aspect-[350.00/218.75]'
+              />
+            </div>
+            <div
+              id='results-capt-cont'
+              className='flex max-w-[50.25rem] py-[0rem] px-[2.5rem] justify-center items-center'
+            >
+              <figcaption className='flex-[1_0_0]'>
+                Login page before (top) and after (bottom) implementing
+                solution.
+              </figcaption>
+            </div>
+          </figure>
+          <figure
+            id='results-fig-2'
+            className='flex max-w-[67.5rem] py-[0.625rem] px-[0rem] flex-col items-center gap-[1.875rem]'
+          >
+            <div
+              id='results-imgs-cont-2'
+              className='flex p-[2.5rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray'
+            >
+              <Image
+                src='/dashboard_before@4x.jpg'
+                width={2048}
+                height={1222}
+                alt={`previous design of loris dashboard page`}
+                className='self-stretch aspect-[350.00/188.37]'
+              />
+              <Image
+                src='/dashboard_after@4x.jpg'
+                width={2048}
+                height={1214}
+                alt={`improved design of loris dashboard page`}
+                className='self-stretch aspect-[350.00/189.72]'
+              />
+            </div>
+            <div
+              id='results-capt-cont-2'
+              className='flex max-w-[50.25rem] py-[0rem] px-[2.5rem] justify-center items-center'
+            >
+              <figcaption>
+                Dashboard page before (top) and after (bottom) implementing
+                solution.
+              </figcaption>
+            </div>
+          </figure>
+          <div className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center'>
+            <div className='flex flex-col gap-[1.875rem]'>
+              <p className='flex-[1_0_0]'>
+                Even though the changes were not extensive in scope and only
+                targeted very specific elements in the UI, the feedback we got
+                from users after applying them on production were overwhelmingly
+                positive.
+              </p>
+              <p>
+                Users reported being able to see groups of information more
+                clearly, identify links and other navigational elements such as
+                primary buttons more easily, and generally felt less overwhelmed
+                when using the interface.
+              </p>
+              <p>
+                A data entry personnel reported enjoying completing her task way
+                more than before, as entering data from paper into the screen
+                was made much easier due to proper alignment of the forms.
+                Another end-user also mentioned that the updated icons were more
+                desirable to interact with when conducting quality control of
+                the data using the QC panel.
+              </p>
+            </div>
+          </div>
+        </section>
         <section
           id={`${name}-next-steps`}
-          className='flex max-w-[54rem] pt-[1.875rem] pb-[0rem] px-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem self-stretch]'
-        ></section>
+          className='flex max-w-[54rem] pt-[1.875rem] pb-[0rem] px-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
+        >
+          <h2 className='self-stretch'>NEXT STEPS</h2>
+          <div className='flex flex-col gap-[1.875rem]'>
+            <p className='self-stretch'>
+              During this process, we were able to clean up the CSS along the
+              way. This resulted in us also receiving positive feedback from
+              developers who appreciated being able to follow a design standard
+              and having a clearer CSS layer specificity.
+            </p>
+            <p className='self-stretch'>
+              Going forward, we decided to continue with the CSS cleanup, now
+              that a design standard was in place. To minimize the number of CSS
+              files required, we opted to move away from utilizing Bootstrap now
+              that Grid and Flexbox were part of the CSS specifications. It was
+              indeed for the purpose of layout for forms that Bootstrap was
+              first implemented.
+            </p>
+            <p className='self-stretch'>
+              Removing the Bootstrap dependency and CSS layer will further
+              simplify future development and help establish a consistent visual
+              style.
+            </p>
+          </div>
+        </section>
       </main>
     </>
   );

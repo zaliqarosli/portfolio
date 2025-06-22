@@ -105,20 +105,25 @@ export default function Page() {
             />
           </div>
           <div className='flex py-[0rem] px-[1.875rem] justify-center items-center self-stretch'>
-            <p className='flex-[1_0_0]'>
-              In designing the participant profile page, I envisioned a hub from
-              which all different types of data can be accessed. I grouped the
-              information in chunks identified by data type to help with content
-              processing, and added markers of data availability at the top of
-              the page, also grouped by data type. These availability chips
-              enable study coordinators to immediately see the status of a
-              patient’s data collection, and therefore their progression in the
-              study timeline. Furthermore, the coordinator has the option of
-              seeing as little or as much information as possible thanks to
-              collapsible panels that group the content. Clicking on the body of
-              the panels navigates the user to a close-up view of the data for
-              further analysis.
-            </p>
+            <div className='flex flex-col gap-[1.875rem] flex-[1_0_0]'>
+              <p>
+                In designing the participant profile page, I envisioned a hub
+                from which all different types of data can be accessed. I
+                grouped the information in chunks identified by data type to
+                help with content processing, and added markers of data
+                availability at the top of the page, also grouped by data type.
+                These availability chips enable study coordinators to
+                immediately see the status of a patient’s data collection, and
+                therefore their progression in the study timeline.
+              </p>
+              <p>
+                Furthermore, the coordinator has the option of seeing as little
+                or as much information as possible thanks to collapsible panels
+                that group the content. Clicking on the body of the panels
+                navigates the user to a close-up view of the data for further
+                analysis.
+              </p>
+            </div>
           </div>
         </section>
         {/* RESULTS SECTION */}
