@@ -14,7 +14,7 @@ export default function Page() {
         >
           <div
             id='fill-container'
-            className='flex min-h-[31.25rem] justify-center items-start absolute bg-[#F8F9FE] self-stretch'
+            className='flex min-h-[31.25rem] justify-center items-start absolute bg-[#F8F9FE] w-full'
           >
             <Image
               src='/data-entry-graphic-loris@2x.jpg'
@@ -29,11 +29,11 @@ export default function Page() {
         </div>
         <div
           id='card-container'
-          className='flex py-[0rem] px-[4.125rem] justify-between items-center absolute bottom-[2.375rem]'
+          className='flex py-[0rem] px-[4.125rem] justify-between absolute bottom-[2.375rem]'
         >
           <figure
             id='text-card'
-            className='flex max-w-[37.5rem] py-[3.125rem] px-[2.25rem] flex-col justify-center items-center gap-[3.125rem] flex-[1_0_0] bg-offwhite shadow-md shadow-brown-shadow text-darkgray text-center'
+            className='flex max-w-[37.5rem] py-[3.125rem] px-[2.25rem] flex-col justify-center gap-[3.125rem] flex-[1_0_0] bg-offwhite shadow-md shadow-brown-shadow text-darkgray text-center'
           >
             <h2 className='max-w-[12.25rem] sm:max-w-[25.25rem]] self-center text-center'>
               {title}
@@ -44,10 +44,10 @@ export default function Page() {
           </figure>
         </div>
       </header>
-      <main className='flex pb-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch overflow-x-hidden'>
+      <main className='flex pb-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch'>
         <section
           id={`${name}-background`}
-          className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center self-stretch]'
+          className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center'
         >
           <p className='self-stretch'>
             <strong>As part of the UX/UI Special Interest Group</strong> at the
@@ -90,35 +90,47 @@ export default function Page() {
         </section>
         <section
           id={`${name}-solution`}
-          className='flex max-w-[54rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
+          className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] max-w-full w-auto'
         >
-          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] justify-start items-center self-stretch'>
-            <h2 className='max-w-[54rem] flex-[1_0_0]'>THE SOLUTION</h2>
+          <header className='max-w-[54rem] pt-[1.875rem] px-[1.875rem]'>
+            <h2>THE SOLUTION</h2>
           </header>
           <div
             id='role-section-container'
-            className='flex max-w-[50.25rem] py-[1.875rem] px-[0rem] flex-col items-center self-stretch text-center'
+            className='flex max-w-[50.25rem] py-[1.875rem] px-[0rem] flex-col w-full self-center  text-center'
           >
             <div className='flex px-[3.75rem] py-[6.25rem] justify-center items-end self-stretch bg-white'>
               {/* text container */}
-              <div className='flex flex-col justify-center items-center gap-[2.5rem] flex-[1_0_0]'>
+              <div
+                id='text-container'
+                className='flex flex-col justify-center gap-[2.5rem] flex-[1_0_0]'
+              >
                 {/* role */}
-                <div className='flex flex-col justify-center items-center gap-[0.94rem] self-stretch'>
+                <div
+                  id='role'
+                  className='flex flex-col justify-center gap-[0.94rem] self-stretch'
+                >
                   <h6 className='self-stretch'>Role</h6>
                   <p className='self-stretch'>
                     UI designer, developer in team of 6
                   </p>
                 </div>
-                {/* duration */}
-                <div className='flex flex-col justify-center gap-[0.94rem] self-stretch'>
+                {/* scope */}
+                <div
+                  id='scope'
+                  className='flex flex-col justify-center gap-[0.94rem] self-stretch'
+                >
                   <h6 className='self-stretch'>Scope</h6>
                   <p className='self-stretch'>
                     Created chosen colour style, proposed use of icon toolkit,
-                    issued all code changes{' '}
+                    issued all code changes
                   </p>
                 </div>
                 {/* tools */}
-                <div className='flex flex-col justify-center gap-[0.94rem] self-stretch'>
+                <div
+                  id='tools'
+                  className='flex flex-col justify-center gap-[0.94rem] self-stretch'
+                >
                   <h6 className='self-stretch'>Tools</h6>
                   <p className='self-stretch'>
                     Sketch, Adobe Color, CSS, Font Awesome, Bootstrap
@@ -127,11 +139,8 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div
-            id='par-1'
-            className='flex max-w-[54rem] py-[0rem] px-[1.875rem] flex-col justify-center items-center'
-          >
-            <p className='self-stretch'>
+          <div id='par-1' className='max-w-[54rem] py-[0rem] px-[1.875rem]'>
+            <p>
               To solve these problems, we focused on 3 areas: colour system,
               alignment, and iconography.
             </p>
@@ -182,28 +191,28 @@ export default function Page() {
             </section>
             <section
               id='section-2'
-              className='flex max-w-[31.5rem] py-[0.625rem] px-[0rem] items-center'
+              className='flex max-w-[31.5rem] py-[0.625rem] px-[0rem]'
             >
-              <div className='flex p-[3.75rem] items-center flex-[1_0_0] bg-darkgray'>
+              <div className='flex p-[3.75rem] text-center flex-[1_0_0] bg-darkgray'>
                 <div className='flex flex-col items-end flex-[1_0_0]'>
-                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end items-center aspect-square bg-[#064785]'>
+                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end aspect-square bg-[#064785]'>
                     <figcaption className='text-white'>#064785</figcaption>
                   </figure>
-                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end items-center aspect-square bg-[#246EB6]'>
+                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end aspect-square bg-[#246EB6]'>
                     <figcaption className='text-white'>#246EB6</figcaption>
                   </figure>
-                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end items-center aspect-square bg-[#E4EBF2]'>
+                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end aspect-square bg-[#E4EBF2]'>
                     <figcaption className='text-darkgray'>#E4EBF2</figcaption>
                   </figure>
                 </div>
                 <div className='flex flex-col items-start flex-[1_0_0]'>
-                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end items-center aspect-square bg-[#E89A0C]'>
+                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end aspect-square bg-[#E89A0C]'>
                     <figcaption className='text-darkgray'>#E89A0C</figcaption>
                   </figure>
-                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end items-center aspect-square bg-[#FFBE00]'>
+                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end aspect-square bg-[#FFBE00]'>
                     <figcaption className='text-darkgray'>#FFBE00</figcaption>
                   </figure>
-                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end items-center aspect-square bg-[#FFFFFF]'>
+                  <figure className='flex h-[9.6875rem] 2xl:h-[12rem] p-[1rem] flex-col justify-end aspect-square bg-[#FFFFFF]'>
                     <figcaption className='text-darkgray'>#FFFFFF</figcaption>
                   </figure>
                 </div>
@@ -211,7 +220,7 @@ export default function Page() {
             </section>
             <section
               id='section-3'
-              className='flex flex-col max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center gap-[1.875rem] self-stretch'
+              className='flex flex-col max-w-[54rem] py-[0rem] px-[1.875rem] justify-center gap-[1.875rem] self-stretch'
             >
               <p>
                 In testing the styles, I learned to think critically about
@@ -241,11 +250,11 @@ export default function Page() {
           </section>
           <section
             id='alignment'
-            className='flex max-w-[54rem] flex-col items-center gap-[1.875rem]'
+            className='flex max-w-[54rem] flex-col gap-[1.875rem]'
           >
             <header
               id='div-1'
-              className='flex pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-center gap-[1.875rem] self-stretch'
+              className='flex pt-[1.875rem] px-[1.875rem] flex-col gap-[1.875rem] self-stretch'
             >
               <h3 className='self-stretch'>Alignment</h3>
               <p>
@@ -257,15 +266,15 @@ export default function Page() {
             </header>
             <div
               id='div-2'
-              className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center'
+              className='flex max-w-[50.25rem] py-[0.625rem] self-center'
             >
               <div
                 id='midgray-container-1'
-                className='flex p-[2.5rem] flex-col items-start self-stretch bg-midgray'
+                className='flex p-[2.5rem] justify-center self-stretch bg-midgray'
               >
                 <div
                   id='img-container-1'
-                  className='flex pt-[1.25rem] px-[0.625rem] pb-[0.625rem] flex-col items-start self-stretch bg-white'
+                  className='flex pt-[1.25rem] px-[0.625rem] pb-[0.625rem] self-stretch bg-white'
                 >
                   <Image
                     src='/rrf_before@4x.jpg'
@@ -277,10 +286,7 @@ export default function Page() {
                 </div>
               </div>
             </div>
-            <div
-              id='div-3'
-              className='flex py-[0rem] px-[1.875rem] justify-center items-center self-stretch'
-            >
+            <div id='div-3' className='py-[0rem] px-[1.875rem]'>
               <p>
                 We correctly aligned the forms and rendered them as their paper
                 version to help decrease cognitive load when completing the
@@ -289,7 +295,7 @@ export default function Page() {
             </div>
             <div
               id='div-4'
-              className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center'
+              className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col self-center'
             >
               {' '}
               <div
@@ -311,13 +317,10 @@ export default function Page() {
               </div>
             </div>
           </section>
-          <section
-            id='iconography'
-            className='flex flex-col items-center gap-[1.875rem] self-stretch'
-          >
+          <section id='iconography' className='flex flex-col gap-[1.875rem]'>
             <header
               id='icon-div-1'
-              className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-start gap-[1.875rem]'
+              className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] flex-col items-start gap-[1.875rem]'
             >
               <h3>Iconography</h3>
               <p>
@@ -334,7 +337,7 @@ export default function Page() {
             >
               <div
                 id='imgs-cont'
-                className='flex max-w-[44rem] py-[2.5rem] px-[3.125rem] justify-center items-start gap-[2.875rem] bg-white'
+                className='flex max-w-[44rem] py-[2.5rem] px-[3.125rem] justify-center items-start gap-[2.875rem] bg-white/70'
               >
                 <div
                   id='img-cont-1'
@@ -350,7 +353,7 @@ export default function Page() {
                 </div>
                 <div
                   id='img-cont-2'
-                  className='flex pt-[1.25rem] pr-[0.9375rem] pb-[0rem] pl-[0.625rem] items-start flex-[1_0_0] aspect-[142.00/250.87] bg-[#E3EAF1] self-stretch'
+                  className='flex pt-[1.25rem] pr-[0.9375rem] pl-[0.625rem] items-start flex-[1_0_0] aspect-[142.00/250.87] bg-[#E3EAF1] self-stretch'
                 >
                   <Image
                     src='/panel-icon-before-2@4x.jpg'
@@ -363,7 +366,7 @@ export default function Page() {
               </div>
               <div
                 id='caption-cont'
-                className='flex max-w-[50.25rem] pt-[1.875rem] px-[3.125rem] pb-[0rem] items-center'
+                className='flex max-w-[50.25rem] pt-[1.875rem] px-[3.125rem]'
               >
                 <figcaption className='flex-[1_0_0]'>
                   Before (left) and after (right) applying new colour style
@@ -372,7 +375,7 @@ export default function Page() {
             </figure>
             <div
               id='icon-div-3'
-              className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center'
+              className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center'
             >
               <div className='flex flex-col gap-[1.875rem]'>
                 <p className='flex-[1_0_0]'>
@@ -399,7 +402,7 @@ export default function Page() {
               >
                 <div
                   id='img-cont-2-1'
-                  className='flex h-[30rem] w-[20.75rem] py-[1.25rem] pr-[0.9375rem] pl-[1.875rem] justify-center items-center aspect-[83/120] bg-[#0D4983]'
+                  className='flex h-[30rem] w-[20.75rem] py-[1.25rem] pr-[0.9375rem] pl-[1.875rem] justify-center aspect-[83/120] bg-[#0D4983]'
                 >
                   <Image
                     src='/panel-icon-after-1@4x.jpg'
@@ -411,7 +414,7 @@ export default function Page() {
                 </div>
                 <div
                   id='img-cont-2-2'
-                  className='flex h-[30rem] w-[20.75rem] p-[1.25rem] justify-center items-center aspect-[83/120] bg-[#E4EBF2]'
+                  className='flex h-[30rem] w-[20.75rem] p-[1.25rem] justify-center aspect-[83/120] bg-[#E4EBF2]'
                 >
                   <Image
                     src='/panel-icon-after-2@4x.jpg'
@@ -424,7 +427,7 @@ export default function Page() {
               </div>
               <div
                 id='caption-cont-2'
-                className='flex max-w-[50.25rem] py-[0rem] px-[1.875rem] 2xl:px-[1.75rem] justify-center items-center'
+                className='flex max-w-[50.25rem] py-[0rem] px-[1.875rem] 2xl:px-[1.75rem] justify-center'
               >
                 <figcaption className='flex-[1_0_0]'>
                   Implementing FontAwesome icons, followed by the new colour
@@ -438,7 +441,7 @@ export default function Page() {
           id={`${name}-results`}
           className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
-          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-start gap-[1.875rem]'>
+          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] flex-col items-start gap-[1.875rem]'>
             <h2 className='self-stretch'>The results</h2>
             <p className='self-stretch'>
               Applying the colour system greatly improved the interface, the
@@ -452,7 +455,7 @@ export default function Page() {
           >
             <div
               id='results-imgs-cont'
-              className='flex p-[2.5rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray'
+              className='flex p-[2.5rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray/80'
             >
               <Image
                 src='/login_old@4x.jpg'
@@ -471,7 +474,7 @@ export default function Page() {
             </div>
             <div
               id='results-capt-cont'
-              className='flex max-w-[50.25rem] py-[0rem] px-[2.5rem] justify-center items-center'
+              className='flex max-w-[50.25rem] py-[0rem] px-[2.5rem] justify-center'
             >
               <figcaption className='flex-[1_0_0]'>
                 Login page before (top) and after (bottom) implementing
@@ -485,7 +488,7 @@ export default function Page() {
           >
             <div
               id='results-imgs-cont-2'
-              className='flex p-[2.5rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray'
+              className='flex p-[2.5rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray/80'
             >
               <Image
                 src='/dashboard_before@4x.jpg'
@@ -504,7 +507,7 @@ export default function Page() {
             </div>
             <div
               id='results-capt-cont-2'
-              className='flex max-w-[50.25rem] py-[0rem] px-[2.5rem] justify-center items-center'
+              className='flex max-w-[50.25rem] py-[0rem] px-[2.5rem] justify-center'
             >
               <figcaption>
                 Dashboard page before (top) and after (bottom) implementing
@@ -512,7 +515,7 @@ export default function Page() {
               </figcaption>
             </div>
           </figure>
-          <div className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center'>
+          <div className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center'>
             <div className='flex flex-col gap-[1.875rem]'>
               <p className='flex-[1_0_0]'>
                 Even though the changes were not extensive in scope and only
@@ -539,7 +542,7 @@ export default function Page() {
         </section>
         <section
           id={`${name}-next-steps`}
-          className='flex max-w-[54rem] pt-[1.875rem] pb-[0rem] px-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
+          className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
           <h2 className='self-stretch'>NEXT STEPS</h2>
           <div className='flex flex-col gap-[1.875rem]'>
