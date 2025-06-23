@@ -14,7 +14,7 @@ export default function Page() {
         >
           <div
             id='fill-container'
-            className='flex min-h-[31.25rem] justify-center items-start absolute bg-[#F8F9FE] w-full'
+            className='flex min-h-[31.25rem] justify-center items-start absolute bg-[#F8F9FE] self-stretch'
           >
             <Image
               src='/data-entry-graphic-loris@2x.jpg'
@@ -44,7 +44,7 @@ export default function Page() {
           </figure>
         </div>
       </header>
-      <main className='flex pb-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch'>
+      <main className='flex pb-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch overflow-x-hidden'>
         <section
           id={`${name}-background`}
           className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center items-center self-stretch]'
@@ -90,16 +90,16 @@ export default function Page() {
         </section>
         <section
           id={`${name}-solution`}
-          className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch'
+          className='flex max-w-[54rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
-          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] justify-start items-center w-full'>
-            <h2 className=''>THE SOLUTION</h2>
+          <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] justify-start items-center self-stretch'>
+            <h2 className='max-w-[54rem] flex-[1_0_0]'>THE SOLUTION</h2>
           </header>
           <div
             id='role-section-container'
-            className='flex px-[1.875rem] py-[0rem] flex-col items-center'
+            className='flex max-w-[50.25rem] py-[1.875rem] px-[0rem] flex-col items-center self-stretch text-center'
           >
-            <div className='flex max-w-[50.25rem] px-[3.75rem] py-[6.25rem] justify-center items-end self-stretch bg-white text-center'>
+            <div className='flex px-[3.75rem] py-[6.25rem] justify-center items-end self-stretch bg-white'>
               {/* text container */}
               <div className='flex flex-col justify-center items-center gap-[2.5rem] flex-[1_0_0]'>
                 {/* role */}
@@ -218,7 +218,7 @@ export default function Page() {
                 colour application in visual hierarchy. I created a focused
                 colour style and applied it as follows:
               </p>
-              <ol className='list-decimal indent-5'>
+              <ol className='list-decimal list-inside px-[1.875rem]'>
                 <li>
                   <strong>Primary colour</strong>: LORIS blue for navigation bar
                   and branding
@@ -265,7 +265,7 @@ export default function Page() {
               >
                 <div
                   id='img-container-1'
-                  className='flex pt-[1.25rem] px-[0.625rem] pb=[0.625rem] flex-col items-start self-stretch bg-white'
+                  className='flex pt-[1.25rem] px-[0.625rem] pb-[0.625rem] flex-col items-start self-stretch bg-white'
                 >
                   <Image
                     src='/rrf_before@4x.jpg'
@@ -298,7 +298,7 @@ export default function Page() {
               >
                 <div
                   id='img-container-2'
-                  className='flex pt-[1.25rem] pr-[0rem] pb-[0.625rem] pl=[0.75rem] flex-col items-start self-stretch bg-white'
+                  className='flex pt-[1.25rem] pr-[0rem] pb-[0.625rem] pl-[0.75rem] flex-col items-start self-stretch bg-white'
                 >
                   <Image
                     src='/rrf_after@4x.jpg'
@@ -338,26 +338,26 @@ export default function Page() {
               >
                 <div
                   id='img-cont-1'
-                  className='flex pt-[0.75rem] pr-[0rem] pb-[0.9375rem] pl-[0.625rem] items-center flex-[1_0_0] aspect-[30/53] bg-[#0D4983]'
+                  className='flex pt-[0.75rem] pr-[0rem] pb-[0.9375rem] pl-[0.625rem] items-start flex-[1_0_0] aspect-[142.00/250.87] bg-[#0D4983] self-stretch'
                 >
                   <Image
                     src='/panel-icon-before-1@4x.jpg'
                     width={498}
                     height={774}
                     alt={`panel UI with outdated, pixelated icons`}
-                    className='flex-[1_0_0] aspect-[140.00/227.50]'
+                    className='flex-[1_0_0] aspect-[132.00/214.50]'
                   />
                 </div>
                 <div
                   id='img-cont-2'
-                  className='flex pt-[1.25rem] pr-[0rem] pb-[0.3125rem] pl-[0.625rem] items-center flex-[1_0_0] aspect-[30/53] bg-[#E3EAF1]'
+                  className='flex pt-[1.25rem] pr-[0.9375rem] pb-[0rem] pl-[0.625rem] items-start flex-[1_0_0] aspect-[142.00/250.87] bg-[#E3EAF1] self-stretch'
                 >
                   <Image
                     src='/panel-icon-before-2@4x.jpg'
                     width={230}
                     height={452}
                     alt={`panel UI with outdated, pixelated icons`}
-                    className='shrink-0 aspect-[129/239]'
+                    className='flex-[1_0_0] aspect-[117.00/216.77]'
                   />
                 </div>
               </div>
@@ -395,7 +395,7 @@ export default function Page() {
             >
               <div
                 id='imgs-cont-2'
-                className='flex py-[0.625rem] px-[1.875rem] justify-center min-[804px]:justify-between content-center gap-[1.25rem] flex-wrap w-full'
+                className='flex py-[0.625rem] px-[1.875rem] justify-center min-[804px]:justify-between content-center gap-[1.25rem] flex-wrap self-stretch'
               >
                 <div
                   id='img-cont-2-1'
@@ -418,7 +418,7 @@ export default function Page() {
                     width={492}
                     height={958}
                     alt={`panel UI with fontawesome icons`}
-                    className='shrink-0 aspect-[272.00/444.06]'
+                    className='aspect-[272.00/444.06]'
                   />
                 </div>
               </div>
