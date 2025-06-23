@@ -36,7 +36,7 @@ export default function Page() {
       <main className='flex pb-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch'>
         <section
           id={`${name}-background`}
-          className='flex max-w-[54rem] py-[0rem] px-[1.875rem] flex-col justify-center items-center gap-[1.875rem] 2xl:gap-[3.75rem self-stretch]'
+          className='flex max-w-[54rem] py-[0rem] px-[1.875rem] flex-col justify-center items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
           <p className='self-stretch'>
             <strong>As developer of the Canadian Open Parkinson Network</strong>
@@ -49,7 +49,7 @@ export default function Page() {
         {/* THE PROBLEM SECTION */}
         <section
           id={`${name}-problem`}
-          className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-start gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch w-full mx-auto'
+          className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] flex-col items-start gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
           <h2 className='self-stretch'>THE PROBLEM</h2>
           <p className='self-stretch'>
@@ -64,18 +64,21 @@ export default function Page() {
         {/* THE SOLUTION SECTION */}
         <section
           id={`${name}-solution`}
-          className='flex max-w-[54rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch w-full mx-auto'
+          className='flex max-w-[54rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
-          <header className='flex pt-[1.875rem] px-[1.875rem] pb-[0rem] justify-center items-center self-stretch'>
-            <h2 className='flex-[1_0_0]'>the solution</h2>
+          <header className='flex pt-[1.875rem] px-[1.875rem] justify-start items-center self-stretch'>
+            <h2>the solution</h2>
           </header>
           {/* Role banner box */}
-          <div className='flex max-w-[50.25rem] py-[1.875rem] px-[0rem] flex-col items-center self-stretch text-center'>
-            <div className='flex px-[3.75rem] py-[6.25rem] justify-center items-end self-stretch bg-white'>
+          <div
+            id='role-section-container'
+            className='flex max-w-[50.25rem] py-[1.875rem] px-[0rem] flex-col items-center text-center w-full'
+          >
+            <div className='flex px-[3.75rem] py-[6.25rem] justify-center items-end self-stretch bg-white/70'>
               {/* text container */}
-              <div className='flex flex-col justify-center items-center gap-[2.5rem] flex-[1_0_0]'>
+              <div className='flex flex-col justify-center items-center gap-[2.5rem] 2xl:gap-[3.75rem] flex-[1_0_0]'>
                 {/* role */}
-                <div className='flex flex-col justify-center gap-[0.94rem] self-stretch'>
+                <div className='flex flex-col justify-center items-center gap-[0.94rem] self-stretch'>
                   <h6 className='self-stretch'>Role</h6>
                   <p className='self-stretch'>Sole UI designer, developer</p>
                 </div>
@@ -93,9 +96,14 @@ export default function Page() {
             </div>
           </div>
           <div className='flex py-[0rem] px-[1.875rem] justify-center items-center self-stretch'>
-            <p className='flex-[1_0_0]'></p>
+            <p className='flex-[1_0_0]'>
+              Providing a participant-centric dashboard would facilitate the
+              coordinator with follow-up scheduling and data collection by
+              showing in brief the participant’s last completed step and all
+              data collected so far.
+            </p>
           </div>
-          <div className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center self-stretch'>
+          <div className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center'>
             <Image
               src='/patient_profile_demo@2x.jpg'
               width={2880}
@@ -129,48 +137,53 @@ export default function Page() {
         {/* RESULTS SECTION */}
         <section
           id={`${name}-results`}
-          className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch w-full mx-auto'
+          className='flex max-w-[54rem] pt-[1.875rem] flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
-          <h2 className='self-stretch'>the results</h2>
-          <p className='flex-[1_0_0] self-stretch'>
-            Redesigning the table of information from the initial participant
-            profile page into a visual representation of data tells a story of a
-            participant’s study journey.
-          </p>
+          <header className='flex px-[1.875rem] flex-col items-start gap-[1.875rem] self-stretch'>
+            <h2 className='self-stretch'>the results</h2>
+            <p className='self-stretch'>
+              Redesigning the table of information from the initial participant
+              profile page into a visual representation of data tells a story of
+              a participant’s study journey.
+            </p>
+          </header>
+
           {/* images container */}
-          <div className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-start self-stretch'>
-            <figure className='flex p-[1.875rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray opacity-80'>
-              <Image
-                src='/result-img-1@2x.jpg'
-                width={2880}
-                height={1359}
-                alt={`screenshot of patient profile page before changes`}
-                className='self-stretch aspect-[744.00/352.49]'
-              />
-              <figcaption className='p-[1.875rem]'>
+          <div className='flex max-w-[50.25rem] py-[0.625rem] flex-col items-start gap-[1.875rem]'>
+            <figure className='flex flex-col items-start gap-[1.875rem] self-stretch'>
+              <div className='flex p-[1.875rem] justify-center items-center self-stretch bg-lightgray/80'>
+                <Image
+                  src='/result-img-1@2x.jpg'
+                  width={2880}
+                  height={1359}
+                  alt={`screenshot of patient profile page before changes`}
+                  className='aspect-[744.00/352.49]'
+                />
+              </div>
+              <figcaption className='px-[1.875rem]'>
                 Profile page showing participant metadata before (top) and after
                 (bottom) implementing redesign.
               </figcaption>
             </figure>
-            <figure className='flex p-[1.875rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray opacity-80'>
+            <figure className='flex p-[1.875rem] justify-center items-center self-stretch bg-lightgray/80'>
               <Image
                 src='/result-img-2@2x.jpg'
                 width={1920}
                 height={1054}
                 alt={`screenshot of patient profile page after changes`}
-                className='self-stretch aspect-[744.00/411.75]'
+                className='aspect-[744.00/411.75]'
               />
             </figure>
           </div>
-          <p className='flex-[1_0_0] self-stretch'>
+          <p className='px-[1.875rem]'>
             The new participant-centric dashboard organizes and presents the
             data visually. Grouping the data and implementing the use of colour
             to communicate status helped coordinators to quickly process the
             information and easily identify their next steps.
           </p>
           {/* Image 2 container */}
-          <div className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center self-stretch'>
-            <figure className='flex p-[1.875rem] flex-col items-start gap-[1.875rem] self-stretch bg-lightgray opacity-80'>
+          <div className='flex max-w-[50.25rem] py-[0.625rem] flex-col items-center'>
+            <figure className='flex p-[1.875rem] justify-center items-center self-stretch bg-lightgray/80'>
               <Image
                 src='/result-img-3@2x.jpg'
                 width={2851}
@@ -195,13 +208,13 @@ export default function Page() {
             </blockquote>
             <div className='flex py-[0rem] px-[1.875rem] justify-end items-center self-stretch'>
               <strong className='text-right'>
-                —<cite>Laws of UX</cite>
+                —<cite className='not-italic'>Laws of UX</cite>
               </strong>
             </div>
           </div>
-          <p className='flex-[1_0_0] self-stretch'>
-            We also received positive feedback from stakeholders who appreciated
-            the use of visual elements such as images, colour coding, and chips.
+          <p className='px-[1.875rem]'>
+            We received positive feedback from stakeholders who appreciated the
+            use of visual elements such as images, colour coding, and chips.
             These elements brought the data to life, and successfully showed the
             breadth of data that the project was collecting. This visual
             representation of the scope of the database was material the
@@ -212,7 +225,7 @@ export default function Page() {
         {/* NEXT STEPS SECTION */}
         <section
           id={`${name}-next-steps`}
-          className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] pb-[0rem] flex-col items-start gap-[1.875rem] 2xl:gap-[3.75rem] self-stretch w-full mx-auto'
+          className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] flex-col items-start gap-[1.875rem] 2xl:gap-[3.75rem]'
         >
           <h2 className='self-stretch'>next steps</h2>
           <p className='self-stretch'>
