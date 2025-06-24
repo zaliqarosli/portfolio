@@ -10,11 +10,11 @@ export default function Page() {
       <header className='flex flex-col items-center self-stretch relative'>
         <div
           id='bg-image'
-          className='flex min-h-[43.75rem] justify-center items-start self-stretch relative'
+          className='flex min-h-[45rem] min-[868px]:min-h-[47.5rem] lg:min-h-[50rem] justify-center items-start self-stretch relative'
         >
           <div
             id='fill-container'
-            className='flex min-h-[31.25rem] justify-center items-start absolute bg-[#F8F9FE] w-full'
+            className='flex min-h-[31.25rem] justify-center items-center absolute bg-[#F8F9FE] w-full'
           >
             <Image
               src='/data-entry-graphic-loris@2x.jpg'
@@ -22,7 +22,7 @@ export default function Page() {
               height={2484}
               // fill={true}
               alt={`graphic depicting form data collection`}
-              style={{ objectFit: 'contain', width: '100%' }}
+              style={{ objectFit: 'cover', width: '100%' }}
               className='max-w-[68.75rem] min-h-[23.15863rem] max-h-[41.7rem] flex-[1_0_0] aspect-[611.00/370.54]'
             />
           </div>
@@ -35,10 +35,10 @@ export default function Page() {
             id='text-card'
             className='flex max-w-[37.5rem] py-[3.125rem] px-[2.25rem] flex-col justify-center gap-[3.125rem] flex-[1_0_0] bg-offwhite shadow-md shadow-brown-shadow text-darkgray text-center'
           >
-            <h2 className='max-w-[12.25rem] sm:max-w-[25.25rem]] self-center text-center'>
+            <h2 className='max-w-4/5 sm:max-w-1/2 lg:max-w-4/5 self-center text-center'>
               {title}
             </h2>
-            <figcaption className='max-w-[12.25rem] sm:max-w-[25.25rem] self-stretch text-center'>
+            <figcaption className='max-w-[12.25rem] sm:max-w-[25.25rem] self-center text-center'>
               {description}
             </figcaption>
           </figure>
@@ -99,11 +99,11 @@ export default function Page() {
             id='role-section-container'
             className='flex max-w-[50.25rem] py-[1.875rem] px-[0rem] flex-col w-full self-center  text-center'
           >
-            <div className='flex px-[3.75rem] py-[6.25rem] justify-center items-end self-stretch bg-white'>
+            <div className='flex py-[3.75rem] px-[6.25rem] justify-center items-end self-stretch bg-white/70'>
               {/* text container */}
               <div
                 id='text-container'
-                className='flex flex-col justify-center gap-[2.5rem] flex-[1_0_0]'
+                className='flex flex-col justify-center gap-[2.5rem] flex-[1_0_0] 2xl:max-w-4/5'
               >
                 {/* role */}
                 <div
@@ -181,11 +181,8 @@ export default function Page() {
                   contextual imagery such as brain scans, and considered colour
                   psychology in our choices. To select our final colour style,
                   we conducted testing on users and chose the style that
-                  received the most positive reviews.
-                </p>
-                <p>
-                  The final selected style ended up being the one that I had
-                  created.
+                  received the most positive reviews. The colour style that I
+                  had created was in the end the one selected.
                 </p>
               </div>
             </section>
@@ -518,10 +515,10 @@ export default function Page() {
           <div className='flex max-w-[54rem] py-[0rem] px-[1.875rem] justify-center'>
             <div className='flex flex-col gap-[1.875rem]'>
               <p className='flex-[1_0_0]'>
-                Even though the changes were not extensive in scope and only
-                targeted very specific elements in the UI, the feedback we got
-                from users after applying them on production were overwhelmingly
-                positive.
+                The changes were not very extensive in scope and only targeted
+                specific elements in the UI. Nonetheless, the feedback we
+                received from users after applying the changes on production
+                were overwhelmingly positive.
               </p>
               <p>
                 Users reported being able to see groups of information more
