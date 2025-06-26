@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import CTA from '../../../ui/components/cta';
+
 export default function Page() {
   const title = 'MTL BLOC LIST';
   const name = 'mtl-bloc-list';
@@ -336,14 +338,231 @@ export default function Page() {
               width={1728}
               height={1200}
               alt={`initial design of mtl bloc list landing page`}
-              className='aspect-[804.00/525.86] bg-lightgray shadow-md shadow-black/25'
+              className='aspect-[804.00/525.86] shadow-md shadow-black/25'
             />
+            <p>
+              I wanted to make sure I accurately applied my style guide to the
+              Landing Page before moving on to the rest of the website. Setting
+              the style on the first page allows the rest to follow seamlessly.
+              It took a couple of iterations for the design to align strongly
+              with the mood board, effectively communicating the goal of the
+              project.
+            </p>
+            <Image
+              src='/landing-page-v3.jpg'
+              width={1728}
+              height={2257}
+              alt={`final design of mtl bloc list landing page`}
+              className='aspect-[37/48] shadow-md shadow-black/25'
+            />
+            <p>
+              Now that the colours match those in my style guide, and the goal
+              of the website clearly introduced, I was ready to build on my
+              design.
+            </p>
+            <Image
+              src='/directory-page-1.jpg'
+              width={1728}
+              height={1117}
+              alt={`final design of mtl bloc list directory (menu) page`}
+              className='aspect-[370.00/226.2] shadow-md shadow-black/25'
+            />
+            <Image
+              src='/item-page-1.jpg'
+              width={1728}
+              height={2257}
+              alt={`final design of mtl bloc list landing page`}
+              className='aspect-[370.00/791.15] shadow-md shadow-black/25'
+            />
+          </section>
+          <section
+            id='building-design-system'
+            className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
+          >
+            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem]'>
+              <h3>Building a design system</h3>
+              <p>
+                While creating the rest of my designs, I was able to further
+                refine my style guide by modifying colours, adding variants, and
+                really solidifying the typography.
+              </p>
+            </header>
+            <figure className='flex max-w-[50.25rem] max-h-[52.47rem] p-[1.875rem] justify-center items-center aspect-[430.00/449.03] bg-midgray'>
+              <Image
+                src='/design-system-screenshot@4x.jpg'
+                width={1076}
+                height={1196}
+                alt={`colour and font design system screenshot`}
+                className='aspect-[370.00/389.03]'
+              />
+            </figure>
+            <div className='flex max-w-[54rem] flex-col px-[1.875rem] justify-center items-center gap-[1.875rem] 2xl:gap-[3.75rem]'>
+              <p>
+                I also created components for each of my UI elements as I was
+                designing them. By building my UI kit throughout the design
+                process, I was able to easily generate instances and variants at
+                the ready when it came time to creating the mobile designs.
+              </p>
+              <figure
+                id='design-syst-imgs-group'
+                className='flex py-[2.5rem] justify-center items-start content-start gap-[1.25rem] flex-[1_0_0] flex-wrap bg-[#030000]/40'
+              >
+                <Image
+                  src='/menu-list-component@2x.png'
+                  width={1446}
+                  height={1559}
+                  alt={`menu list component with variants`}
+                  className='w-[21.25rem] h-[21.375rem]'
+                />
+                <div
+                  id='chips-ctas-cont'
+                  className='flex w-[21.25rem] items-start'
+                >
+                  <Image
+                    src='/chips-component@2x.png'
+                    width={671}
+                    height={372}
+                    alt={`chips component with variants`}
+                    className='w-[10rem] h-[3.5rem] shrink-0'
+                  />
+                  <Image
+                    src='/cta-components@2x.png'
+                    width={804}
+                    height={581}
+                    alt={`CTA component with variants`}
+                    className='w-[10rem] h-[5.6875rem] shrink-0'
+                  />
+                </div>
+                <Image
+                  src='/navigation-component@2x.png'
+                  width={1563}
+                  height={1150}
+                  alt={`navigation component with variants`}
+                  className='w-[19.375rem] h-[14.25544rem]'
+                />
+                <Image
+                  src='/scroll-component@2x.png'
+                  width={1623}
+                  height={920}
+                  alt={`navigation component with variants`}
+                  className='w-[19.375rem] h-[7.35981rem]'
+                />
+              </figure>
+            </div>
+          </section>
+          <section
+            id='prototyping'
+            className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
+          >
+            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem] justify-center items-center gap-[1.875rem] 2xl:gap-[3.75rem]'>
+              <h3>Prototyping & Mobile Layout</h3>
+              <p>
+                Lastly, I created a working prototype with all the desired
+                interactions before duplicating all my frames to modify for
+                mobile.
+              </p>
+            </header>
+            <figure
+              id='prototype-imgs-container'
+              className='flex max-w-[50.25rem] flex-col items-center'
+            >
+              <Image
+                src='/prototype-desktop@2x.jpg'
+                width={1576}
+                height={1280}
+                alt={`Figma desktop prototype screenshot of project design`}
+                className='min-w-[26.875rem] min-h-[22.327rem] aspect-[430.00/357.23]'
+              />
+              <Image
+                src='/prototype-mobile@2x.jpg'
+                width={1606}
+                height={1430}
+                alt={`Figma mobile prototype screenshot of project design`}
+                className='min-w-[26.875rem] min-h-[25.41rem] aspect-[430.00/406.55]'
+              />
+            </figure>
+          </section>
+          <section
+            id='development'
+            className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
+          >
+            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem] justify-center items-center'>
+              <h3>Development</h3>
+              <p>
+                Before heading over to the IDE, I exported from Figma an assets
+                folder of optimized graphics ready for web production.
+              </p>
+            </header>
+            <figure className='max-w-[67.5rem] py-[0.625rem]'>
+              <Image
+                src='/mtl-bloc-list-home@2x.jpg'
+                width={2849}
+                height={1800}
+                alt={`Landing page on production`}
+                className='aspect-[430.00/271.67]'
+              />
+            </figure>
+            <p className='max-w-[54rem] py-[1.875rem]'>
+              To create the website, I used plain HTML5, CSS, and Vanilla JS. I
+              developed for desktop first, then used media queries with
+              breakpoints to add compatibility with mobile. For the data, I
+              created simple JSON files to store the directory list and dynamic
+              sections of the gym page content.
+            </p>
+            <div
+              id='cta-container'
+              className='flex max-w-[54rem] p-[1.875rem] justify-end'
+            >
+              <CTA
+                name='visit-github'
+                type='external'
+                href='https://github.com/zaliqarosli/mtl-bloc-list'
+                style='max-w-[16rem] w-[10.625rem] 2xl:w-auto'
+              >
+                Visit GitHub
+              </CTA>
+            </div>
           </section>
         </section>
         <section
           id={`${name}-next-steps`}
           className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
-        ></section>
+        >
+          <header className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] w-full'>
+            <h2>NEXT STEPS</h2>
+            <p>
+              The version submitted as my Final Project did very well, receiving
+              an average grade of 95% with an overall grade of A+ for the
+              program. No comments for improvements were provided, however here
+              are a couple that I would like to explore as I continue to work on
+              this project:
+            </p>
+          </header>
+          <section
+            id='refocus-narrative'
+            className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
+          >
+            <h3>Refocus the narrative</h3>
+            <p>
+              {`In creating the page for a specific gym, I categorized the content
+              into the gym’s history, its neighbourhood, its amenities and
+              offerings, and social initiatives. While these sections do a good
+              job of making the website informative, it loses the initial goal
+              of focusing on the gym’s character and culture. Moving forward, I
+              would like to redesign the gym page by using visual storytelling
+              to highlight the styles of the gyms.`}
+            </p>
+          </section>
+          <section
+            id='mobile-first'
+            className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
+          >
+            <h3>Go mobile-first</h3>
+            <p>
+              {`Given the demographic of my audience, and the challenges I faced modifying my designs for mobile, I believe that going for a mobile-first approach would have been more appropriate. Prioritizing the mobile experience would take into account the fact that if shared, this website would  likely be visited on mobile by the majority of users.`}
+            </p>
+          </section>
+        </section>
       </main>
     </>
   );
