@@ -3,8 +3,7 @@ import Image from 'next/image';
 export default function Page() {
   const title = 'patient dashboard';
   const name = 'patient-dashboard';
-  const description =
-    "Redesigning a study participant's profile page as a hub of tagged data";
+  const description = `Redesigning a study participant's profile page as a hub of tagged data`;
   return (
     <>
       <header className='flex flex-col items-center self-stretch relative'>
@@ -40,10 +39,10 @@ export default function Page() {
         >
           <p className='self-stretch'>
             <strong>As developer of the Canadian Open Parkinson Network</strong>
-            , I created its LORIS platform, a research management software and
+            {` , I created its LORIS platform, a research management software and
             patient database. Collaborating with stakeholders, I developed a
             scalable web-based solution to facilitate the network’s collection,
-            storage, and release of study participants’ de-identified data.
+            storage, and release of study participants’ de-identified data.`}
           </p>
         </section>
         {/* THE PROBLEM SECTION */}
@@ -53,12 +52,12 @@ export default function Page() {
         >
           <h2 className='self-stretch'>THE PROBLEM</h2>
           <p className='self-stretch'>
-            A clinical research coordinator’s problem is that she needs to
+            {`A clinical research coordinator’s problem is that she needs to
             easily view a snapshot of a study participant’s data to quickly
             determine where they are in their study journey. How can we provide
             a visual overview of key research data in a single format, enabling
             quick analysis, informed decision-making, and effective tracking of
-            a patient’s progress in the research study?
+            a patient’s progress in the research study?`}
           </p>
         </section>
         {/* THE SOLUTION SECTION */}
@@ -97,10 +96,10 @@ export default function Page() {
           </div>
           <div className='flex py-[0rem] px-[1.875rem] justify-center items-center self-stretch'>
             <p className='flex-[1_0_0]'>
-              Providing a participant-centric dashboard would facilitate the
+              {`Providing a participant-centric dashboard would facilitate the
               coordinator with follow-up scheduling and data collection by
               showing in brief the participant’s last completed step and all
-              data collected so far.
+              data collected so far.`}
             </p>
           </div>
           <div className='flex max-w-[50.25rem] py-[0.625rem] px-[0rem] flex-col items-center'>
@@ -115,14 +114,14 @@ export default function Page() {
           <div className='flex py-[0rem] px-[1.875rem] justify-center items-center self-stretch'>
             <div className='flex flex-col gap-[1.875rem] flex-[1_0_0]'>
               <p>
-                In designing the participant profile page, I envisioned a hub
+                {`In designing the participant profile page, I envisioned a hub
                 from which all different types of data can be accessed. I
                 grouped the information in chunks identified by data type to
                 help with content processing, and added markers of data
                 availability at the top of the page, also grouped by data type.
                 These availability chips enable study coordinators to
                 immediately see the status of a patient’s data collection, and
-                therefore their progression in the study timeline.
+                therefore their progression in the study timeline.`}
               </p>
               <p>
                 Furthermore, the coordinator has the option of seeing as little
@@ -142,9 +141,9 @@ export default function Page() {
           <header className='flex px-[1.875rem] flex-col items-start gap-[1.875rem] self-stretch'>
             <h2 className='self-stretch'>the results</h2>
             <p className='self-stretch'>
-              Redesigning the table of information from the initial participant
+              {`Redesigning the table of information from the initial participant
               profile page into a visual representation of data tells a story of
-              a participant’s study journey.
+              a participant’s study journey.`}
             </p>
           </header>
 
@@ -213,13 +212,13 @@ export default function Page() {
             </div>
           </div>
           <p className='px-[1.875rem]'>
-            We received positive feedback from stakeholders who appreciated the
+            {`We received positive feedback from stakeholders who appreciated the
             use of visual elements such as images, colour coding, and chips.
             These elements brought the data to life, and successfully showed the
             breadth of data that the project was collecting. This visual
             representation of the scope of the database was material the
             project’s directors were happy to share when communicating with the
-            community.
+            community.`}
           </p>
         </section>
         {/* NEXT STEPS SECTION */}
@@ -229,7 +228,7 @@ export default function Page() {
         >
           <h2 className='self-stretch'>next steps</h2>
           <p className='self-stretch'>
-            To improve the data chunking further, I would reorganize the
+            {`To improve the data chunking further, I would reorganize the
             metadata to be grouped as one instead of broken down into separate
             sections. Consolidating the patient information and candidate
             parameter panels would highlight these data points as higher level
@@ -238,7 +237,7 @@ export default function Page() {
             would make consistent the language used to describe a study
             participant. Currently, patient, candidate, and participant are all
             used synonymously. Choosing only one to use throughout the interface
-            would further enable quick understanding of the data.
+            would further enable quick understanding of the data.`}
           </p>
         </section>
       </main>

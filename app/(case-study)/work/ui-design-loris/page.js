@@ -3,8 +3,7 @@ import Image from 'next/image';
 export default function Page() {
   const title = 'UI DESIGN FOR LORIS';
   const name = 'ui-design-loris';
-  const description =
-    'Optimizing research software’s UI to enable users to easily and accurately enter data';
+  const description = `Optimizing research software’s UI to enable users to easily and accurately enter data`;
   return (
     <>
       <header className='flex flex-col items-center self-stretch relative'>
@@ -65,20 +64,20 @@ export default function Page() {
           <h2 className='self-stretch'>THE PROBLEM</h2>
           <div className='flex flex-col gap-[1.875rem] self-stretch'>
             <p>
-              One of our focuses was to optimize the data entry user’s journey.
+              {`One of our focuses was to optimize the data entry user’s journey.
               A data entry personnel’s problem is that she needs to easily and
               quickly complete her data entry task so that she can attend to
               other tasks in her busy schedule. How can we ensure that she can
               easily find and complete the forms accurately so that she can be
-              productive with her time?
+              productive with her time?`}
             </p>
             <p>
-              Our main desire was to lessen the user’s cognitive load. From user
+              {`Our main desire was to lessen the user’s cognitive load. From user
               feedback, we learned that LORIS’ primary colour, LORIS blue, was
               applied too heavily across the interface, making it overwhelming.
               It was also noted that whitespace and contrast were underused,
               particularly in the navigation bar. The lack of colour variation
-              and text hierarchy made navigating less intuitive.
+              and text hierarchy made navigating less intuitive.`}
             </p>
             <p>
               Furthermore, we heard from users that their workflow of directly
@@ -376,11 +375,11 @@ export default function Page() {
             >
               <div className='flex flex-col gap-[1.875rem]'>
                 <p className='flex-[1_0_0]'>
-                  We updated the iconography for a cleaner, and more modern and
+                  {`We updated the iconography for a cleaner, and more modern and
                   consistent look. We replaced the outdated icons with
                   FontAwesome’s library, which was easy to manage and also
                   improved performance by allowing us to remove all individual
-                  icons from the application’s assets.
+                  icons from the application’s assets.`}
                 </p>
                 <p>
                   While merely updating the icons improved the look of the panel
@@ -441,9 +440,9 @@ export default function Page() {
           <header className='flex max-w-[54rem] pt-[1.875rem] px-[1.875rem] flex-col items-start gap-[1.875rem]'>
             <h2 className='self-stretch'>The results</h2>
             <p className='self-stretch'>
-              Applying the colour system greatly improved the interface, the
+              {`Applying the colour system greatly improved the interface, the
               results of which were apparent right away in the user’s journey:
-              on the login and dashboard pages.
+              on the login and dashboard pages.`}
             </p>
           </header>
           <figure

@@ -3,8 +3,7 @@ import Image from 'next/image';
 export default function Page() {
   const title = 'MTL BLOC LIST';
   const name = 'mtl-bloc-list';
-  const description =
-    'Creating a fun, interactive website to explore Montreal’s characteristically distinct bouldering gyms and find the right one for you!';
+  const description = `Creating a fun, interactive website to explore Montreal’s characteristically distinct bouldering gyms and find the right one for you!`;
   return (
     <>
       <header className='flex flex-col items-center self-stretch relative'>
@@ -187,9 +186,9 @@ export default function Page() {
                 old-school to most new-school, giving them a score out of 100.
               </p>
               <p>
-                I imagined the landing page inviting the user to answer a
+                {`I imagined the landing page inviting the user to answer a
                 question, the response to which would generate a gym whose score
-                matched the user's input.
+                matched the user's input.`}
               </p>
               <p>
                 I began to sketch out ideas and expanded on the one I liked the
@@ -210,10 +209,10 @@ export default function Page() {
             <header className='flex flex-col max-w-[54rem] px-[1.875rem] w-full gap-[1.875rem] 2xl:gap-[3.75rem]'>
               <h3>Defining the visual language</h3>
               <p>
-                To solidify the idea, I wrote up a simple design brief to
+                {`To solidify the idea, I wrote up a simple design brief to
                 establish the project’s overview, its goals and objectives, and
                 its target audience. Better understanding these starting points
-                helped me shape the visual design of the project.
+                helped me shape the visual design of the project.`}
               </p>
             </header>
 
@@ -279,15 +278,15 @@ export default function Page() {
               className='flex max-w-[54rem] px-[1.875rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
             >
               <p>
-                For its visual style, I knew I wanted to keep the website’s
+                {`For its visual style, I knew I wanted to keep the website’s
                 overall feel bright and colourful, to reflect the playful nature
                 of climbing. At the same time, I wanted to balance that
                 playfulness with climbing’s reputation as the “cool new sport”,
-                by giving it a bit of edge.
+                by giving it a bit of edge.`}
               </p>
               <p>
-                After gathering my inspiration research, I was ready to create
-                my mood board to curate the project’s visual language.
+                {`After gathering my inspiration research, I was ready to create
+                my mood board to curate the project’s visual language.`}
               </p>
             </div>
             <div
