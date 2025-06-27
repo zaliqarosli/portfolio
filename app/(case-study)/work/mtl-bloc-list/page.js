@@ -139,7 +139,7 @@ export default function Page() {
           className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] items-center max-w-full w-auto'
         >
           <header className='max-w-[54rem] pt-[1.875rem] px-[1.875rem] w-full'>
-            <h2 className='w-80'>the making of mtl bloc list</h2>
+            <h2 className='w-4/5'>the making of mtl bloc list</h2>
           </header>
           <div
             id='role-section-container'
@@ -211,7 +211,7 @@ export default function Page() {
             id='visual-language'
             className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] w-full'
           >
-            <header className='flex flex-col max-w-[54rem] px-[1.875rem] w-full gap-[1.875rem] 2xl:gap-[3.75rem]'>
+            <header className='flex flex-col max-w-[54rem] px-[1.875rem] w-full gap-[1.875rem] 2xl:gap-[3.75rem] self-center'>
               <h3>Defining the visual language</h3>
               <p>
                 {`To solidify the idea, I wrote up a simple design brief to
@@ -220,10 +220,9 @@ export default function Page() {
                 helped me shape the visual design of the project.`}
               </p>
             </header>
-
             <div
               id='design-brief-cont'
-              className='flex py-[0.625rem] px-[1.875rem] justify-center items center'
+              className='flex py-[0.625rem] px-[1.875rem] justify-center items-center'
             >
               <Image
                 src='/design-brief@2x.jpg'
@@ -235,7 +234,7 @@ export default function Page() {
             </div>
             <div
               id='par-2-cont'
-              className='flex max-w-[54rem] px-[1.875rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
+              className='flex max-w-[54rem] px-[1.875rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem] self-center'
             >
               <p>
                 From there, I looked for inspiration from other web designs,
@@ -280,7 +279,7 @@ export default function Page() {
             </div>
             <div
               id='par-3-cont'
-              className='flex max-w-[54rem] px-[1.875rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
+              className='flex max-w-[54rem] px-[1.875rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem] self-center'
             >
               <p>
                 {`For its visual style, I knew I wanted to keep the website’s
@@ -315,7 +314,7 @@ export default function Page() {
                 />
               </div>
             </div>
-            <p className='max-w-[54rem] px-[1.875rem]'>
+            <p className='max-w-[54rem] px-[1.875rem] self-center'>
               Staying true to the findings of my research, I created a mood
               board for typography and colour that would be the basis of my
               style guide. I expressed the concept of play successfully, and
@@ -502,7 +501,7 @@ export default function Page() {
                 className='aspect-[430.00/271.67]'
               />
             </figure>
-            <div className='flex max-w-[54rem] flex-col py-[1.875rem] gap-[1.875rem]'>
+            <div className='flex max-w-[54rem] flex-col px-[1.875rem] gap-[1.875rem]'>
               <p>
                 To create the website, I used plain HTML5, CSS, and Vanilla JS.
                 I developed for desktop first, then used media queries with
@@ -546,7 +545,7 @@ export default function Page() {
             id='refocus-narrative'
             className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <h3>Refocus the narrative</h3>
+            <h3 className='pt-[0.625rem]'>Refocus the narrative</h3>
             <p>
               {`In creating the page for a specific gym, I categorized the content
               into the gym’s history, its neighbourhood, its amenities and
@@ -561,7 +560,7 @@ export default function Page() {
             id='mobile-first'
             className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <h3>Go mobile-first</h3>
+            <h3 className='pt-[0.625rem]'>Go mobile-first</h3>
             <p>
               {`Given the demographic of my audience, and the challenges I faced modifying my designs for mobile, I believe that going for a mobile-first approach would have been more appropriate. Prioritizing the mobile experience would take into account the fact that if shared, this website would  likely be visited on mobile by the majority of users.`}
             </p>
