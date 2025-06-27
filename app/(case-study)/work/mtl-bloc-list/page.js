@@ -8,24 +8,27 @@ export default function Page() {
   const description = `Creating a fun, interactive website to explore Montreal’s characteristically distinct bouldering gyms and find the right one for you!`;
   return (
     <>
-      <header className='flex flex-col items-center self-stretch relative'>
+      <header className='flex h-[47.5rem] 2xl:h-auto flex-col items-center self-stretch relative'>
         <div
           id='bg-image'
-          className='flex min-h-[45rem] min-[868px]:min-h-[47.5rem] lg:min-h-[50rem] justify-center items-start self-stretch relative shrink-0'
+          className='flex h-[45.5rem] 2xl:h-[54.4rem] justify-center items-start self-stretch relative shrink-0 overflow-clip'
         >
           <Image
-            src='/mtl-bloc-list-map.png'
+            src='/map-of-mtl-mobile@4x.jpg'
             width={1578}
             height={1800}
-            // fill={true}
             alt={`map of montreal with bouldering gym locations pinned`}
-            style={{ objectFit: 'cover', width: '100%' }}
-            className='max-w-[68.75rem] min-h-[23.15863rem] max-h-[41.7rem] flex-[1_0_0] aspect-[512.00/593.27] opacity-90'
+            style={{
+              objectFit: 'cover',
+              width: '100%',
+              objectPosition: '50% 300%',
+            }}
+            className='flex-[1_0_0] aspect-[512.00/593.27] opacity-90 absolute 2xl:-top-56rem 2xl:-left-10rem h-[37rem] lg:h-[80rem] 2xl:h-149rem'
           />
         </div>
         <div
           id='card-container'
-          className='flex px-[4.125rem] justify-between absolute bottom-[2rem]'
+          className='flex px-[4.125rem] justify-between absolute bottom-[2rem] lg:bottom-[9.25rem] 2xl:bottom-[12.875rem]'
         >
           <figure
             id='text-card'
@@ -53,7 +56,7 @@ export default function Page() {
             Figma, and create a working prototype along with a style guide, a UI
             kit, and exported assets.
           </p>
-          <h2 className='text-darkgray pt-[1.875rem]'>
+          <h2 className='text-darkgray pt-[1.875rem] pr-[2.625rem]'>
             everything begins with an idea
           </h2>
           <p>
@@ -66,7 +69,7 @@ export default function Page() {
           </p>
           {/* quote block */}
           <div className='py-[0.625rem]'>
-            <blockquote className='flex py-[0rem] pr-[1.875rem] pl-[5rem] justify-center items-center self-stretch'>
+            <blockquote className='flex py-[0rem] pr-[1.875rem] pl-[3rem] justify-center items-center self-stretch'>
               <h4 className='flex-[1_0_0] text-right'>
                 “Which bouldering gym should I go to?”
               </h4>
@@ -133,10 +136,10 @@ export default function Page() {
         </section>
         <section
           id={`${name}-solution`}
-          className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] items-center'
+          className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] items-center max-w-full w-auto'
         >
           <header className='max-w-[54rem] pt-[1.875rem] px-[1.875rem] w-full'>
-            <h2>the making of mtl bloc list</h2>
+            <h2 className='w-80'>the making of mtl bloc list</h2>
           </header>
           <div
             id='role-section-container'
@@ -206,7 +209,7 @@ export default function Page() {
           </div>
           <section
             id='visual-language'
-            className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] items-center'
+            className='flex flex-col gap-[1.875rem] 2xl:gap-[3.75rem] w-full'
           >
             <header className='flex flex-col max-w-[54rem] px-[1.875rem] w-full gap-[1.875rem] 2xl:gap-[3.75rem]'>
               <h3>Defining the visual language</h3>
@@ -291,13 +294,10 @@ export default function Page() {
                 my mood board to curate the project’s visual language.`}
               </p>
             </div>
-            <div
-              id='imgs-cont-3'
-              className='flex py-[0.625rem] justify-center items-center content-center'
-            >
+            <div id='imgs-cont-3' className='flex py-[0.625rem]'>
               <div
                 id='img-cont-2'
-                className='flex p-[2.5rem] justify-center items-center content-center gap-[2.5rem] flex-[1_0_0] flex-wrap bg-darkgray'
+                className='flex p-[2.5rem] justify-center items-center content-center gap-[2.5rem] flex-[1_0_0] flex-wrap bg-darkgray max-w-full w-auto'
               >
                 <Image
                   src='/colour-style@3x.jpg'
@@ -379,7 +379,7 @@ export default function Page() {
             id='building-design-system'
             className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem]'>
+            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'>
               <h3>Building a design system</h3>
               <p>
                 While creating the rest of my designs, I was able to further
@@ -454,7 +454,7 @@ export default function Page() {
             id='prototyping'
             className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem] justify-center items-center gap-[1.875rem] 2xl:gap-[3.75rem]'>
+            <header className='flex max-w-[54rem] flex-col p-[1.875rem] pb-[0rem] justify-center gap-[1.875rem] 2xl:gap-[3.75rem]'>
               <h3>Prototyping & Mobile Layout</h3>
               <p>
                 Lastly, I created a working prototype with all the desired
@@ -464,7 +464,7 @@ export default function Page() {
             </header>
             <figure
               id='prototype-imgs-container'
-              className='flex max-w-[50.25rem] flex-col items-center'
+              className='flex max-w-[50.25rem] flex-col items-center bg-[#2F3336]'
             >
               <Image
                 src='/prototype-desktop@2x.jpg'
@@ -486,7 +486,7 @@ export default function Page() {
             id='development'
             className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem] justify-center items-center'>
+            <header className='flex max-w-[54rem] flex-col p-[1.875rem] pb-[0rem] justify-center gap-[1.875rem] 2xl:gap-[3.75rem]'>
               <h3>Development</h3>
               <p>
                 Before heading over to the IDE, I exported from Figma an assets
@@ -502,16 +502,20 @@ export default function Page() {
                 className='aspect-[430.00/271.67]'
               />
             </figure>
-            <p className='max-w-[54rem] py-[1.875rem]'>
-              To create the website, I used plain HTML5, CSS, and Vanilla JS. I
-              developed for desktop first, then used media queries with
-              breakpoints to add compatibility with mobile. For the data, I
-              created simple JSON files to store the directory list and dynamic
-              sections of the gym page content.
-            </p>
+            <div className='flex max-w-[54rem] flex-col py-[1.875rem] gap-[1.875rem]'>
+              <p>
+                To create the website, I used plain HTML5, CSS, and Vanilla JS.
+                I developed for desktop first, then used media queries with
+                breakpoints to add compatibility with mobile.
+              </p>
+              <p>
+                For the data, I created simple JSON files to store the directory
+                list and dynamic sections of the gym page content.
+              </p>
+            </div>
             <div
               id='cta-container'
-              className='flex max-w-[54rem] p-[1.875rem] justify-end'
+              className='flex max-w-[54rem] p-[1.875rem] justify-end self-stretch'
             >
               <CTA
                 name='visit-github'
@@ -562,6 +566,19 @@ export default function Page() {
               {`Given the demographic of my audience, and the challenges I faced modifying my designs for mobile, I believe that going for a mobile-first approach would have been more appropriate. Prioritizing the mobile experience would take into account the fact that if shared, this website would  likely be visited on mobile by the majority of users.`}
             </p>
           </section>
+          <div
+            id='cta-container-2'
+            className='flex p-[1.875rem] justify-end self-stretch'
+          >
+            <CTA
+              name='visit-project'
+              type='external'
+              href='https://zaliqarosli.github.io/mtl-bloc-list/'
+              style='max-w-[16rem] w-[10.625rem] 2xl:w-auto'
+            >
+              Visit project
+            </CTA>
+          </div>
         </section>
       </main>
     </>
