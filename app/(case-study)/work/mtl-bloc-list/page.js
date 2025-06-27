@@ -250,7 +250,7 @@ export default function Page() {
             </div>
             <div
               id='imgs-cont'
-              className='flex max-w-[67.5rem] py-[0.625rem] justify-center items-center content-center gap-[1.875rem] 2xl:gap-[3.75rem] flex-wrap'
+              className='flex max-w-[67.5rem] py-[0.625rem] justify-center items-center content-center gap-[1.875rem] 2xl:gap-[3.75rem] flex-wrap self-center'
             >
               <div
                 id='img-1-cont'
@@ -378,7 +378,7 @@ export default function Page() {
             id='building-design-system'
             className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem] flex-col gap-[1.875rem] 2xl:gap-[3.75rem]'>
+            <header className='flex max-w-[54rem] p-[1.875rem] pb-[0rem] flex-col gap-[1.875rem]'>
               <h3>Building a design system</h3>
               <p>
                 While creating the rest of my designs, I was able to further
@@ -453,7 +453,7 @@ export default function Page() {
             id='prototyping'
             className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <header className='flex max-w-[54rem] flex-col p-[1.875rem] pb-[0rem] justify-center gap-[1.875rem] 2xl:gap-[3.75rem]'>
+            <header className='flex max-w-[54rem] flex-col p-[1.875rem] pb-[0rem] justify-center gap-[1.875rem]'>
               <h3>Prototyping & Mobile Layout</h3>
               <p>
                 Lastly, I created a working prototype with all the desired
@@ -485,7 +485,7 @@ export default function Page() {
             id='development'
             className='flex flex-col items-center gap-[1.875rem] 2xl:gap-[3.75rem]'
           >
-            <header className='flex max-w-[54rem] flex-col p-[1.875rem] pb-[0rem] justify-center gap-[1.875rem] 2xl:gap-[3.75rem]'>
+            <header className='flex max-w-[54rem] flex-col p-[1.875rem] pb-[0rem] justify-center gap-[1.875rem]'>
               <h3>Development</h3>
               <p>
                 Before heading over to the IDE, I exported from Figma an assets
@@ -514,13 +514,13 @@ export default function Page() {
             </div>
             <div
               id='cta-container'
-              className='flex max-w-[54rem] p-[1.875rem] justify-end self-stretch'
+              className='flex max-w-[54rem] p-[1.875rem] justify-end self-center w-full'
             >
               <CTA
                 name='visit-github'
                 type='external'
                 href='https://github.com/zaliqarosli/mtl-bloc-list'
-                style='max-w-[16rem] w-[10.625rem] 2xl:w-auto'
+                style='min-w-[10.625rem]'
               >
                 Visit GitHub
               </CTA>
@@ -567,13 +567,13 @@ export default function Page() {
           </section>
           <div
             id='cta-container-2'
-            className='flex p-[1.875rem] justify-end self-stretch'
+            className='flex p-[1.875rem] justify-end self-center w-full'
           >
             <CTA
               name='visit-project'
               type='external'
               href='https://zaliqarosli.github.io/mtl-bloc-list/'
-              style='max-w-[16rem] w-[10.625rem] 2xl:w-auto'
+              style='min-w-[10.625rem]'
             >
               Visit project
             </CTA>
