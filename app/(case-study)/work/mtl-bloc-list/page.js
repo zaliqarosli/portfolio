@@ -21,9 +21,9 @@ export default function Page() {
             style={{
               objectFit: 'cover',
               width: '100%',
-              objectPosition: '50% 300%',
+              objectPosition: '50% 58%',
             }}
-            className='flex-[1_0_0] aspect-[512.00/593.27] opacity-90 absolute 2xl:-top-56rem 2xl:-left-10rem h-[37rem] lg:h-[80rem] 2xl:h-149rem'
+            className='flex-[1_0_0] aspect-[512.00/593.27] opacity-90 absolute 2xl:-top-56rem 2xl:-left-10rem h-[80%] lg:h-full'
           />
         </div>
         <div
