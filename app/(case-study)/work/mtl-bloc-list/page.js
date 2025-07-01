@@ -23,7 +23,7 @@ export default function Page() {
               width: '100%',
               objectPosition: '50% 58%',
             }}
-            className='flex-[1_0_0] aspect-[512.00/593.27] opacity-90 absolute 2xl:-top-56rem 2xl:-left-10rem h-[80%] lg:h-full'
+            className='flex-[1_0_0] aspect-[512.00/593.27] opacity-80 absolute 2xl:-top-56rem 2xl:-left-10rem h-[80%] lg:h-full'
           />
         </div>
         <div
