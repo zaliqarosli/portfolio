@@ -14,9 +14,10 @@ export default function Page() {
           className='flex h-[45.5rem] 2xl:h-[54.4rem] justify-center items-start self-stretch relative shrink-0 overflow-clip'
         >
           <Image
-            src='/map-of-mtl-mobile@4x.jpg'
-            width={1578}
-            height={1800}
+            priority={true}
+            src='/mtl-map@2x-100.jpg'
+            width={2035}
+            height={2374}
             alt={`map of montreal with bouldering gym locations pinned`}
             style={{
               objectFit: 'cover',
