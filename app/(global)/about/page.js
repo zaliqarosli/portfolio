@@ -8,11 +8,11 @@ export default function Page() {
     <>
       <section
         id='profile-section'
-        className='flex flex-col items-center gap-[-5.0625rem]'
+        className='flex flex-col items-center w-full'
       >
         <div
           id='profile-pic-container'
-          className='max-w-[57.75rem] px-[1.875rem] items-center'
+          className='flex max-w-[57.75rem] px-[1.875rem] items-center z-10 w-full'
         >
           <Image
             src='/profile-picture@4x.jpg'
@@ -23,25 +23,25 @@ export default function Page() {
               objectFit: 'cover',
               width: '100%',
             }}
-            className='w-[16.125rem] 2xl:w-[24.1875rem] h-[16.125rem] 2xl:h-[24.1875rem] justify-center items-center aspect-[1/1]'
+            className='flex w-[16.125rem] 2xl:w-[24.1875rem] h-[16.125rem] 2xl:h-[24.1875rem] justify-center items-center aspect-[1/1] flex-[0_0_0]'
           />
         </div>
         <div
           id='bio-container'
-          className='pt-[8.8125rem] px-[1.875rem] pb-[5rem] gap-[3.125rem] bg-offwhite/70'
+          className='pt-[8.8125rem] px-[1.875rem] pb-[5rem] gap-[3.125rem] bg-offwhite/70 mt-[-5.0625rem] flex justify-center self-stretch'
         >
           <div className='flex max-w-[54rem] flex-col items-end gap-[5rem] self-stretch'>
-            <section className='flex flex-col items-start gap-[2.5rem] stretch pl-[2.25rem]'>
-              <header className='flex  flex-col items-start gap-[0.9375rem]'>
-                <h4 className='pl-[0.0625rem]'>Hello! I’m</h4>
-                <h2>Zaliqa Rosli</h2>
+            <section className='flex flex-col items-start gap-[2.5rem] self-stretch'>
+              <header className='flex flex-col items-start gap-[0.9375rem] w-full min-[338px]:max-[341px]:w-71/100 min-[341px]:max-[436px]:w-7/10'>
+                <h2 className='pl-[0.0625rem]'>Hello! I’m Zaliqa Rosli.</h2>
               </header>
               <figcaption>
-                I’m a UI and Web designer based in Montreal, Quebec. I have a
-                background in full-stack software development, and have recently
-                focused on the frontend. I’m passionate about visual
-                communication and the intersection of art and technology. Let me
-                know if you have a project you’d like to work on together!
+                I’m a UI designer and frontend developer based in Montreal,
+                Quebec. I have over 8 years of experience in fullstack software
+                development, and have focused on frontend design and development
+                over the last year. I’m passionate about visual communication
+                and the intersection of art, design, and technology. Let me know
+                if you have a project you’d like to work on together!
               </figcaption>
             </section>
             <div
@@ -58,7 +58,7 @@ export default function Page() {
       </section>
       <section
         id='skills-section'
-        className='flex max-w-[57.75rem] px-[1.875rem] flex-col items-start gap-[1.875rem] self-stretch'
+        className='flex max-w-[57.75rem] px-[1.875rem] flex-col items-start gap-[1.875rem] w-full'
       >
         <h3>my skills</h3>
         <div
@@ -186,8 +186,8 @@ export default function Page() {
             className='w-[5.3125rem] h-[5.3125rem]'
           />
         </div>
-        <div className='pt-[1.875rem] items-end self-stretch'>
-          <div className='flex flex-col items-end gap-[1.25rem]'>
+        <div className='flex pt-[1.875rem] flex-col items-end self-stretch'>
+          <div className='flex flex-col items-end gap-[1.25rem] w-max'>
             <h6>Want to know more?</h6>
             <CTA name='download-cv' type='external' href=''>
               Download CV
