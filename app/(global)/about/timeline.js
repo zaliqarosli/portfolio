@@ -51,15 +51,35 @@ export default function Timeline() {
           );
         }
         titles.push(<h6 key={`title-${i}-${j}`}>{role.title}</h6>);
-        connectors.push(
-          <div
-            key={`connector-row-${i}-${j}-first`}
-            id={`connector-row-${i}-${j}-first`}
-            className='flex'
-          >
-            {connectorRow}
-          </div>
-        );
+        if (j > 1) {
+          // else create new subheader with year and title containers
+          // insert connector group and title group into title container
+          // insert year text into year container if its not already been displayed
+          // push connector dash to connector group is display year is true
+          // push role.title to title group
+          titleAddOn = true;
+          // push single info connection to connector group
+          connectorRow.push(<InfoConnector key={i + j} />);
+          connectors.push(
+            <div
+              key={`connector-row-${i}-${j}-addon`}
+              id={`connector-row-${i}-${j}-addon`}
+              className='flex h-full'
+            >
+              {connectorRow}
+            </div>
+          );
+        } else {
+          connectors.push(
+            <div
+              key={`connector-row-${i}-${j}-first`}
+              id={`connector-row-${i}-${j}-first`}
+              className='flex'
+            >
+              {connectorRow}
+            </div>
+          );
+        }
 
         // if roles.length > 1, push double info connector to connector group and roles[1].title to title group
         connectorRow = [];
@@ -97,24 +117,6 @@ export default function Timeline() {
               {connectorRow}
             </div>
           );
-        } else if (j > 1) {
-          // else create new subheader with year and title containers
-          // insert connector group and title group into title container
-          // insert year text into year container if its not already been displayed
-          // push connector dash to connector group is display year is true
-          // push role.title to title group
-          titleAddOn = true;
-          // push single info connection to connector group
-          connectorRow.push(<InfoConnector key={i + j} />);
-          connectors.push(
-            <div
-              key={`connector-row-${i}-${j}-addon`}
-              id={`connector-row-${i}-${j}-addon`}
-              className='flex h-full'
-            >
-              {connectorRow}
-            </div>
-          );
         }
       } else {
         // else if j === 1, continue
@@ -145,7 +147,10 @@ export default function Timeline() {
           >
             <div
               id={`connector-group-${i}-${j}`}
-              className='h-full flex flex-col justify-center'
+              className={
+                'flex flex-col justify-center' +
+                (titleAddOn ? ' relative top-[-50%] h-3/2' : ' h-full')
+              }
             >
               {connectors}
             </div>

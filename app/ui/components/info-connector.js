@@ -1,6 +1,6 @@
 export default function InfoConnector({ type = 'single' }) {
   return (
-    <div className='info-connector flex flex-col items-center mb-[-2px]'>
+    <div className='info-connector flex flex-col items-center mb-[-2px] ml-[-5px]'>
       {type === 'double' && (
         <div className='w-[0.3125rem] h-[0.3125rem]'>
           <svg
@@ -8,6 +8,7 @@ export default function InfoConnector({ type = 'single' }) {
             width='5'
             height='5'
             viewBox='0 0 5 5'
+            className='mx-auto'
           >
             <circle cx='2.5' cy='2.5' r='2.5' className='fill-midgray' />
           </svg>
@@ -20,6 +21,7 @@ export default function InfoConnector({ type = 'single' }) {
           width='5'
           height='5'
           viewBox='0 0 5 5'
+          className='mx-auto'
         >
           <circle cx='2.5' cy='2.5' r='2.5' className='fill-midgray' />
         </svg>
