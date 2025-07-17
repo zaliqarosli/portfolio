@@ -8,7 +8,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
 export default function Layout({ children }) {
-  const [scrollY, updateScrollY] = useState(0);
+  const [scrollY, setScrollY] = useState(0);
 
   // Get the last segment of pathname, and find the next modulo index from that path in caseStudies list
   const segments = usePathname().split('/');
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
   useEffect(
     () =>
       addEventListener('scroll', (event) => {
-        updateScrollY(window.scrollY);
+        setScrollY(window.scrollY);
       }),
     []
   );
