@@ -4,6 +4,7 @@ export default function CTA({
   name,
   type = 'internal',
   href,
+  download = false,
   style = null,
   children,
 }) {
@@ -14,7 +15,12 @@ export default function CTA({
     className += ` ${style}`;
   }
   return type === 'internal' ? (
-    <Link key={name} href={href} className={className}>
+    <Link
+      key={name}
+      href={href}
+      className={className}
+      {...(download ? { download } : {})}
+    >
       <span className='flex-[1_0_0] w-min'>{children}</span>
     </Link>
   ) : (
@@ -25,6 +31,7 @@ export default function CTA({
         'flex p-[1.25rem] justify-center items-center self-stretch bg-secondary text-center text-white cta-button ' +
         style
       }
+      {...(download ? { download } : {})}
     >
       <span className='flex-[1_0_0] w-min'>{children}</span>
     </a>

@@ -214,7 +214,11 @@ export default function Page() {
         <div className='flex pt-[1.875rem] flex-col items-end self-stretch'>
           <div className='flex flex-col items-end gap-[1.25rem] w-max'>
             <h6>Want to know more?</h6>
-            <CTA name='download-cv' type='external' href=''>
+            <CTA
+              name='download-cv'
+              href='/ZaliqaRosli_CV_wd.pdf'
+              download={true}
+            >
               Download CV
             </CTA>
           </div>
