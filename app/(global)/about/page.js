@@ -50,7 +50,11 @@ export default function Page() {
               className='flex flex-col items-end gap-[1.25rem]'
             >
               <h6 className='text-black text-right'>Interested in my work?</h6>
-              <CTA name='contact-me' type='external' href=''>
+              <CTA
+                name='contact-me'
+                type='external'
+                href='mailto:zaliqarosli@gmail.com?subject=Hello!'
+              >
                 Contact Me
               </CTA>
             </div>
