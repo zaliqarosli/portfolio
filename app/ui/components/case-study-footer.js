@@ -52,7 +52,7 @@ export default function CaseStudyFooter({ nextPageTitle, nextPagePath }) {
               >
                 {toCopy}
                 {isCopied && (
-                  <div className='tooltip text-xs text-white bg-secondary py-[0.5rem] px-[1rem] w-min rounded-sm absolute right-[-1rem] bottom-[-3rem] transform-[rotate(-5deg)] after:content-[""] after:absolute after:top-[-8px] after:left-1/2 after:ml-[-4px] after:border-4 after:border-solid after:border-transparent after:border-b-secondary '>
+                  <div className='tooltip text-xs text-white bg-secondary py-[0.5rem] px-[1rem] w-min rounded-sm absolute right-[-1rem] bottom-[-3rem] transform-[rotate(-5deg)] after:content-[""] after:absolute after:top-[-7.5px] after:left-1/2 after:ml-[-4px] after:border-4 after:border-solid after:border-transparent after:border-b-secondary '>
                     Copied!
                   </div>
                 )}
