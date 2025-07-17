@@ -1,14 +1,21 @@
 'use client';
 
+import { useState } from 'react';
 import Icon from './icon-component';
 import Link from 'next/link';
 
 export default function CaseStudyFooter({ nextPageTitle, nextPagePath }) {
-  const email = 'zaliqarosli@gmail.com';
-  const useNavigator = () => {
-    useEffect(() => {
-      navigator.clipboard.writeText(email);
-    }, []);
+  const [isCopied, setIsCopied] = useState(false);
+  const toCopy = 'zaliqarosli@gmail.com';
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(toCopy);
+      setIsCopied(true);
+      setTimeout(() => setIsCopied(false), 1400);
+    } catch (err) {
+      console.error('Failed to copy to clipboard: ', err);
+    }
   };
 
   return (
@@ -39,14 +46,16 @@ export default function CaseStudyFooter({ nextPageTitle, nextPagePath }) {
               <h4>get in touch</h4>
             </div>
             <div className='flex pl-[0.4375rem] justify-center items-center'>
-              {/* TO-DO: Add tooltip alerting 'copied!' */}
               <strong
-                className='text-right cursor-pointer'
-                onClick={() => {
-                  useNavigator;
-                }}
+                className='text-right cursor-pointer relative'
+                onClick={copyToClipboard}
               >
-                {email}
+                {toCopy}
+                {isCopied && (
+                  <div className='tooltip text-xs text-white bg-secondary py-[0.5rem] px-[1rem] w-min rounded-sm absolute right-[-1rem] bottom-[-3rem] transform-[rotate(-5deg)] after:content-[""] after:absolute after:top-[-8px] after:left-1/2 after:ml-[-4px] after:border-4 after:border-solid after:border-transparent after:border-b-secondary '>
+                    Copied!
+                  </div>
+                )}
               </strong>
             </div>
           </div>
@@ -100,13 +109,18 @@ export default function CaseStudyFooter({ nextPageTitle, nextPagePath }) {
                 alt='letter icon svg'
               />
             </a>
-            <Icon
-              href='/email-icon-desktop.svg'
-              width='45'
-              height='45'
-              className='hidden 2xl:block'
-              alt='letter icon svg'
-            />
+            <a
+              href='mailto:zaliqarosli@gmail.com?subject=Hello!'
+              target='_blank'
+            >
+              <Icon
+                href='/email-icon-desktop.svg'
+                width='45'
+                height='45'
+                className='hidden 2xl:block'
+                alt='letter icon svg'
+              />
+            </a>
           </div>
         </div>
       </div>
