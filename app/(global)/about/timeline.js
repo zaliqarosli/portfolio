@@ -36,6 +36,7 @@ export default function Timeline() {
           years.push(<p key={`year-${i}-${j}`}>{role.year}</p>);
           connectorRow.push(
             <div
+              key={`connector-year-${i}-${j}-first`}
               id={`connector-year-${i}-${j}-first`}
               className='flex w-[1.25rem] flex-col items-end border-b border-solid border-midgray'
             ></div>
@@ -43,6 +44,7 @@ export default function Timeline() {
         } else {
           connectorRow.push(
             <div
+              key={`connector-year-${i}-${j}-first`}
               id={`connector-year-${i}-${j}-first`}
               className='flex w-[1.25rem] flex-col items-end'
             ></div>
@@ -50,7 +52,11 @@ export default function Timeline() {
         }
         titles.push(<h6 key={`title-${i}-${j}`}>{role.title}</h6>);
         connectors.push(
-          <div className='flex' id={`connector-row-${i}-${j}-first`}>
+          <div
+            key={`connector-row-${i}-${j}-first`}
+            id={`connector-row-${i}-${j}-first`}
+            className='flex'
+          >
             {connectorRow}
           </div>
         );
@@ -65,6 +71,7 @@ export default function Timeline() {
             years.push(<p key={`year-${i}-${j + 1}`}>{secondRole.year}</p>);
             connectorRow.push(
               <div
+                key={`connector-year-${i}-${j + 1}-second`}
                 id={`connector-year-${i}-${j + 1}-second`}
                 className='flex w-[1.25rem] flex-col items-end border-b border-solid border-midgray'
               ></div>
@@ -72,6 +79,7 @@ export default function Timeline() {
           } else {
             connectorRow.push(
               <div
+                key={`connector-year-${i}-${j + 1}-second`}
                 id={`connector-year-${i}-${j + 1}-second`}
                 className='flex w-[1.25rem] flex-col items-end'
               ></div>
@@ -81,7 +89,11 @@ export default function Timeline() {
           titles.push(<h6 key={`title-${i}-${j + 1}`}>{secondRole.title}</h6>);
           connectorRow.push(<InfoConnector key={i + j} type='double' />);
           connectors.push(
-            <div className='flex' id={`connector-row-${i}-${j}-first`}>
+            <div
+              key={`connector-row-${i}-${j}-first-double`}
+              id={`connector-row-${i}-${j}-first-double`}
+              className='flex h-full'
+            >
               {connectorRow}
             </div>
           );
@@ -95,7 +107,11 @@ export default function Timeline() {
           // push single info connection to connector group
           connectorRow.push(<InfoConnector key={i + j} />);
           connectors.push(
-            <div className='flex' id={`connector-row-${i}-${j}-first`}>
+            <div
+              key={`connector-row-${i}-${j}-addon`}
+              id={`connector-row-${i}-${j}-addon`}
+              className='flex h-full'
+            >
               {connectorRow}
             </div>
           );
@@ -114,7 +130,7 @@ export default function Timeline() {
           <div
             id={`year-container-${i}-${j}`}
             className={
-              'flex w-[4.375rem] pr-[0.625rem] justify-end items-center self-stretch' +
+              'flex w-[4.375rem] pr-[0.625rem] justify-end items-end self-stretch' +
               (titleAddOn ? ' pt-[0.8125rem]' : ' pt-[3.625rem]')
             }
           >
@@ -127,7 +143,12 @@ export default function Timeline() {
               (titleAddOn ? ' pt-[0.9375rem]' : ' pt-[3.75rem]')
             }
           >
-            <div id={`connector-group-${i}-${j}`}>{connectors}</div>
+            <div
+              id={`connector-group-${i}-${j}`}
+              className='h-full flex flex-col justify-center'
+            >
+              {connectors}
+            </div>
             <div
               id={`title-group-${i}-${j}`}
               className='flex flex-col gap-[0.9375rem]'
