@@ -18,13 +18,15 @@ export default function Layout({ children }) {
     (caseStudies.findIndex((e) => e.path === path) + 1) % caseStudies.length;
   const nextPage = caseStudies[nextIndex];
 
-  useEffect(
-    () =>
-      addEventListener('scroll', (event) => {
-        setScrollY(window.scrollY);
-      }),
-    []
-  );
+  useEffect(() => {
+    const handleScroll = (event) => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const displayScrollArrow = scrollY > '500' ? 'xl:flex' : 'xl:hidden';
 
